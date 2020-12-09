@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 
@@ -18,7 +19,7 @@ public class PlayerController : MonoBehaviour
     public agentStates agentState { get; private set; }
 
     private Rigidbody2D rb2d;
-    public float speed, maxVel, jumpForce;
+    public float speed, maxVel, jumpForce,rotateSpeed;
     private Vector2 moveVector;
     private bool onGround;
 
@@ -30,7 +31,19 @@ public class PlayerController : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         moveVector = new Vector2();
         onGround = false;
+
+        InvokeRepeating("CheckDeath", 1, 1);
     }
+
+    private void CheckDeath()
+    {
+        if (transform.position.y < -10)
+        {
+            transform.position = new Vector3(GameObject.FindGameObjectWithTag("StartPoint").transform.position.x, 7, 0);
+            rb2d.velocity = new Vector2(0, 0);
+        }
+    }
+
 
     private void CheckJump()
     {
@@ -40,12 +53,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void OnCollisionEnter2D(Collision2D collision) 
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground") onGround = true;
+        if (collision.gameObject.tag == "Ground")
+        {
+            moveVector.x = 0;
+            onGround = true;
+        }
     }
 
-    public void OnCollisionExit2D(Collision2D collision) 
+    public void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Ground") onGround = false;
     }
@@ -80,11 +97,17 @@ public class PlayerController : MonoBehaviour
                 }
             case agentStates.Landing:
                 {
-                    moveVector.x = 0;
-                    agentState = agentStates.Iddle;
+                    if (transform.rotation.z < -0.2f)
+                    {
+                        transform.Rotate(0, 0, rotateSpeed, Space.Self);
+                    }
+                    else if (transform.rotation.z > 0.2f)
+                    {
+                        transform.Rotate(0, 0, -rotateSpeed, Space.Self);
+                    }
+                    else agentState = agentStates.Iddle;
                     break;
                 }
-
 
         }
 
