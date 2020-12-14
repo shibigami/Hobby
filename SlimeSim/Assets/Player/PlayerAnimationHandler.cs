@@ -20,12 +20,17 @@ public class PlayerAnimationHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetAxis("Horizontal") > 0 && transform.localScale.x == -1) transform.localScale = Vector3.one;
-        else if (Input.GetAxis("Horizontal") < 0 && transform.localScale.x == 1) transform.localScale = new Vector3(-1, 1, 1);
+        if (controller.moveVector.x > 0 && transform.localScale.x == -1) transform.localScale = Vector3.one;
+        else if (controller.moveVector.x < 0 && transform.localScale.x == 1) transform.localScale = new Vector3(-1, 1, 1);
 
-        animator.SetFloat("x", Mathf.Sqrt(Mathf.Pow(Input.GetAxis("Horizontal"), 2)));
+        animator.SetFloat("x", Mathf.Sqrt(Mathf.Pow(controller.moveVector.x, 2)));
 
-        if (controller.agentState==PlayerController.agentStates.Jump) animator.SetTrigger("Jump");
-        if (controller.agentState == PlayerController.agentStates.Landing) animator.SetTrigger("Land");
+        if (controller.agentState == PlayerController.agentStates.Jumping) animator.SetBool("Jump", true);
+        else animator.SetBool("Jump", false);
+        if (controller.agentState == PlayerController.agentStates.Landing || 
+            controller.agentState == PlayerController.agentStates.Iddle || 
+            controller.agentState == PlayerController.agentStates.Running) 
+            animator.SetBool("Land",true);
+        else animator.SetBool("Land", false);
     }
 }

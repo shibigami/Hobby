@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Outputs : MonoBehaviour
 {
     public Text goldText;
+    public Text livesText;
 
     // Start is called before the first frame update
     void Start()
@@ -17,5 +18,10 @@ public class Outputs : MonoBehaviour
     void UpdateUI()
     {
         goldText.text = GameData.gold.ToString();
+        livesText.text = GameData.lives.ToString();
+    }
+
+    private void Update()
+    {
     }
 }

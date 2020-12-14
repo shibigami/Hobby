@@ -24,16 +24,21 @@ public class DoorHandler : MonoBehaviour
         if (enterSign.activeSelf)
             if (Input.GetAxis("Vertical") > 0.2f)
             {
-                GameData.NextLevel();
-                try
-                {
-                    SceneManager.LoadScene(GameData.currentLevel.ToString());
-                }
-                catch
-                {
-                    Debug.Log("Invalid Scene");
-                }
+                NextLevel();
             }
+    }
+
+    public void NextLevel()
+    {
+        GameData.NextLevel();
+        try
+        {
+            SceneManager.LoadScene(GameData.currentLevel.ToString());
+        }
+        catch
+        {
+            Debug.Log("Invalid Scene");
+        }
     }
 
     public void OnTriggerStay2D(Collider2D collision)
