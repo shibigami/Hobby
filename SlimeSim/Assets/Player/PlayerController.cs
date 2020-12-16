@@ -37,6 +37,9 @@ public class PlayerController : MonoBehaviour
 
         analogControls = analog.GetComponent<AnalogTouchControls>();
 
+        Journal.init();
+        GameData.init();
+
         InvokeRepeating("CheckDeath", 1, 1);
     }
 
