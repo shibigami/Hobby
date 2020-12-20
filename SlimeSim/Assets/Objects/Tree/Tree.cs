@@ -26,6 +26,8 @@ public class Tree : MonoBehaviour
         GameData.AddPageToCollection(pageNumber);
         obtained = true;
         infoButton.SetActive(false);
+        if (!GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().journalUnlocked)
+            GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().UnlockJournal();
     }
 
     public void OnTriggerStay2D(Collider2D collision)
@@ -37,8 +39,6 @@ public class Tree : MonoBehaviour
             if (Input.GetAxis("Vertical") > 0.1f)
             {
                 getInfo();
-                if (!GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().journalUnlocked)
-                    GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().UnlockJournal();
             }
         }
     }

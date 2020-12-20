@@ -33,6 +33,7 @@ public class DoorHandler : MonoBehaviour
         GameData.NextLevel();
         try
         {
+            GameObject.FindGameObjectWithTag("Player").transform.rotation = new Quaternion(0, 0, 0, 0);
             SceneManager.LoadScene(GameData.currentLevel.ToString());
         }
         catch

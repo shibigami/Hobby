@@ -13,13 +13,20 @@ public class PlayerController : MonoBehaviour
         Running,
         Jump,
         Jumping,
-        Landing
+        TurnToStand,
+        Landing,
+        Sit
     }
 
-    public agentStates agentState;
+    public agentStates agentState { get; private set; }
 
+    //movement
     private Rigidbody2D rb2d;
-    public float speed, maxVel, jumpForce, rotateSpeed,rotateJumpForce;
+    public float speed, maxVel, jumpForce;
+    public float getUpRotationIncrement, getUpJumpForce;
+    //timer of 2 seconds to ensure character needs to stand up
+    private float getUpTimer;
+
     public Vector2 moveVector { get; private set; }
     private bool onGround;
 
@@ -31,29 +38,47 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(gameObject);
+
         rb2d = GetComponent<Rigidbody2D>();
         moveVector = new Vector2();
         onGround = false;
+
+        getUpTimer = 1.1f;
 
         analogControls = analog.GetComponent<AnalogTouchControls>();
 
         Journal.init();
         GameData.init();
 
-        InvokeRepeating("CheckDeath", 1, 1);
+        InvokeRepeating("CheckOutOfStage", 1, 1);
     }
 
-    private void CheckDeath()
+    private void CheckOutOfStage()
     {
         if (transform.position.y < -10)
         {
-            transform.position = new Vector3(GameObject.FindGameObjectWithTag("StartPoint").transform.position.x, 7, 0);
-            rb2d.velocity = new Vector2(0, rb2d.velocity.y);
-            moveVector = new Vector2(0,moveVector.y);
-            GameData.Die();
+            Die();
         }
     }
 
+    public void Die() 
+    {
+        transform.position = GameObject.FindGameObjectWithTag("StartPoint").transform.position;
+        rb2d.velocity = new Vector2(0, 0);
+        moveVector = new Vector2(0, 0);
+        transform.rotation = new Quaternion(0, 0, 0, 0);
+        getUpTimer = 3f;
+        GameData.Die();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag=="Ground") onGround = true;
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Ground") onGround = false;
+    }
 
     private void CheckJump()
     {
@@ -64,35 +89,23 @@ public class PlayerController : MonoBehaviour
         if (!onGround) agentState = agentStates.Jumping;
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
-        {
-            moveVector = new Vector2(0, 0);
-            onGround = true;
-        }
+        if (collision.transform.tag == "Ground") moveVector = Vector2.zero;
     }
 
-    public void OnTriggerExit2D(Collider2D collision)
+    private IEnumerator RotateToStand() 
     {
-        if (collision.gameObject.tag == "Ground") onGround = false;
-    }
-
-    private IEnumerator RotatingToStand()
-    {
-        if (rb2d.velocity.y < 0.001f&& rb2d.velocity.y > -0.001f)
+        if (getUpTimer <= 0)
         {
-            rb2d.AddForce(new Vector2(0, rotateJumpForce));
-            if (transform.rotation.z < Mathf.Deg2Rad * -10)
-            {
-                transform.Rotate(0, 0, rotateSpeed, Space.Self);
-            }
-            else if (transform.rotation.z > 10 * Mathf.Deg2Rad)
-            {
-                transform.Rotate(0, 0, -rotateSpeed, Space.Self);
-            }
+            rb2d.AddForce(new Vector2(0, getUpJumpForce));
+            transform.Rotate(new Vector3(0, 0, getUpRotationIncrement));
         }
-        yield return new WaitForSecondsRealtime(0.1f);
+        else
+            getUpTimer -= Time.deltaTime;
+
+        yield return new WaitForSeconds(0.5f);
     }
 
     // Update is called once per frame
@@ -102,22 +115,23 @@ public class PlayerController : MonoBehaviour
         {
             case agentStates.Iddle:
                 {
-                    if (Input.GetAxis("Horizontal") != 0||analogControls.AnalogPosition().x!=0) agentState = agentStates.Running;
+                    if(MovementIntent()) agentState = agentStates.Running;
                     CheckJump();
+                    if (Input.GetButton("Fire1")) agentState = agentStates.Sit;
                     break;
                 }
             case agentStates.Running:
                 {
-                    if(Application.platform==RuntimePlatform.Android) moveVector = new Vector2(analogControls.AnalogPosition().x * Time.deltaTime * speed,0);
-                    else moveVector = new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime * speed,0);
-                    if (rb2d.velocity.x == 0) agentState = agentStates.Iddle;
+                    if (Application.platform == RuntimePlatform.Android) 
+                        moveVector = new Vector2(analogControls.AnalogPosition().x * Time.deltaTime * speed, 0);
+                    else moveVector = new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime * speed, 0);
+                    if (!MovementIntent()) agentState = agentStates.Iddle;
                     CheckJump();
 
                     if (moveVector.x != 0)
                     {
                         rb2d.AddForce(moveVector);
                     }
-
                     break;
                 }
             case agentStates.Jump:
@@ -129,17 +143,30 @@ public class PlayerController : MonoBehaviour
             case agentStates.Jumping:
                 {
                     if (onGround) agentState = agentStates.Landing;
-                    else StartCoroutine(RotatingToStand());
+                    if(rb2d.velocity.magnitude<0.01f) StartCoroutine("RotateToStand");
                     break;
                 }
             case agentStates.Landing:
                 {
+                    StopCoroutine("RotateToStand");
+                    getUpTimer = 1.1f;
                     agentState = agentStates.Iddle;
+                    break;
+                }
+            case agentStates.Sit:
+                {
+                    if (MovementIntent()) agentState = agentStates.Iddle;
                     break;
                 }
         }
 
         rb2d.velocity = new Vector2(Mathf.Clamp(rb2d.velocity.x, -maxVel, maxVel), rb2d.velocity.y);
+    }
+
+    private bool MovementIntent() 
+    {
+        if (Input.GetAxis("Horizontal") != 0 || analogControls.AnalogPosition().x != 0) return true;
+        else return false;
     }
 
     public void Jump()
@@ -148,5 +175,10 @@ public class PlayerController : MonoBehaviour
         {
             agentState = agentStates.Jump;
         }
+    }
+
+    public void Sit() 
+    {
+        if (agentState == agentStates.Iddle) agentState = agentStates.Sit;
     }
 }
