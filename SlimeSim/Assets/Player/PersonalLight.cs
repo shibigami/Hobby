@@ -11,7 +11,6 @@ public class PersonalLight : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame

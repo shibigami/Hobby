@@ -39,7 +39,7 @@ public class Chest : MonoBehaviour
     {
         if (gold > 0) for (int i = 0; i < gold; i++)
             {
-                Instantiate(goldPrefab, GameObject.FindGameObjectWithTag("Player").transform.position, transform.rotation);
+                Instantiate(goldPrefab, transform.position, transform.rotation);
 
                 yield return new WaitForSeconds(0.01f);
             }

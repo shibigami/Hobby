@@ -24,7 +24,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb2d;
     public float speed, maxVel, jumpForce;
     public float getUpRotationIncrement, getUpJumpForce;
-    //timer of 2 seconds to ensure character needs to stand up
+    //timer of x seconds to ensure character needs to stand up after timeout
+    public float getUpWaitTime;
     private float getUpTimer;
 
     public Vector2 moveVector { get; private set; }
@@ -37,13 +38,11 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
-
         rb2d = GetComponent<Rigidbody2D>();
         moveVector = new Vector2();
         onGround = false;
 
-        getUpTimer = 1.1f;
+        getUpTimer = getUpWaitTime;
 
         analogControls = analog.GetComponent<AnalogTouchControls>();
 
@@ -67,7 +66,8 @@ public class PlayerController : MonoBehaviour
         rb2d.velocity = new Vector2(0, 0);
         moveVector = new Vector2(0, 0);
         transform.rotation = new Quaternion(0, 0, 0, 0);
-        getUpTimer = 3f;
+        transform.localScale = Vector3.one;
+        getUpTimer = getUpWaitTime;
         GameData.Die();
     }
 
@@ -100,10 +100,12 @@ public class PlayerController : MonoBehaviour
         if (getUpTimer <= 0)
         {
             rb2d.AddForce(new Vector2(0, getUpJumpForce));
-            transform.Rotate(new Vector3(0, 0, getUpRotationIncrement));
+            rb2d.AddTorque(getUpRotationIncrement);
         }
         else
+        {
             getUpTimer -= Time.deltaTime;
+        }
 
         yield return new WaitForSeconds(0.5f);
     }
@@ -149,7 +151,7 @@ public class PlayerController : MonoBehaviour
             case agentStates.Landing:
                 {
                     StopCoroutine("RotateToStand");
-                    getUpTimer = 1.1f;
+                    getUpTimer = getUpWaitTime;
                     agentState = agentStates.Iddle;
                     break;
                 }

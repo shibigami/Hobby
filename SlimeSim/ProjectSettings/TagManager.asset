@@ -8,14 +8,16 @@ TagManager:
   - StartPoint
   - Pointer
   - UI
+  - Dialogue
+  - Coin
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Gold
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 

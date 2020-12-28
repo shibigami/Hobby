@@ -10,11 +10,12 @@ public class AnalogTouchControls : MonoBehaviour
     private Vector2 analogPoint;
     private Vector2 initialClickPoint;
     private RectTransform rect;
+    private Touch touch1;
 
     // Start is called before the first frame update
     void Start()
     {
-        //if (Application.platform != RuntimePlatform.Android && Application.platform != RuntimePlatform.IPhonePlayer) 
+        if (Application.platform != RuntimePlatform.Android && Application.platform != RuntimePlatform.IPhonePlayer) 
             gameObject.SetActive(false);
         analogTransform = analog.GetComponent<RectTransform>();
         rect = GetComponent<RectTransform>();
@@ -24,11 +25,27 @@ public class AnalogTouchControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && WithinBounds()) initialClickPoint = analogPoint;
-        else if (Input.GetMouseButton(0) && initialClickPoint.x > 0)
+        if (Input.touchCount > 0)
         {
-            GetAnalogPoint();
-            if ((analogPoint - initialClickPoint).magnitude > 100) analogPoint = ((analogPoint-initialClickPoint).normalized * 100)+initialClickPoint; 
+            if (Input.touchCount > 1)
+            {
+                if (Input.GetTouch(0).position.x < Input.GetTouch(1).position.x)
+                {
+                    touch1 = Input.GetTouch(0);
+                }
+                else
+                {
+                    touch1 = Input.GetTouch(1);
+                }
+            }
+            else touch1 = Input.GetTouch(0);
+        }
+
+        if (touch1.phase == TouchPhase.Began && WithinBounds(touch1.position)) initialClickPoint = analogPoint;
+        else if ((touch1.phase == TouchPhase.Moved||touch1.phase==TouchPhase.Stationary) && initialClickPoint.x > 0)
+        {
+            GetAnalogPoint(touch1.position);
+            if ((analogPoint - initialClickPoint).magnitude > 100) analogPoint = ((analogPoint - initialClickPoint).normalized * 100) + initialClickPoint;
             analogTransform.anchoredPosition = analogPoint;
         }
         else ResetAnalog();
@@ -40,19 +57,19 @@ public class AnalogTouchControls : MonoBehaviour
         analogTransform.anchoredPosition = new Vector2(-100, -100);
     }
 
-    private bool WithinBounds()
+    private bool WithinBounds(Vector2 position)
     {
-        if (rect.rect.Contains(Input.mousePosition))
+        if (rect.rect.Contains(position))
         {
-            GetAnalogPoint();
+            GetAnalogPoint(position);
             return true;
         }
         else return false;
     }
 
-    private void GetAnalogPoint()
+    private void GetAnalogPoint(Vector2 position)
     {
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(rect, Input.mousePosition, Camera.main, out analogPoint);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(rect, position, Camera.main, out analogPoint);
     }
 
     public Vector2 AnalogPosition() 
