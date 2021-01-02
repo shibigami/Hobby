@@ -32,13 +32,16 @@ public class Tree : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D collision)
     {
-        if (!obtained)
+        if (collision.tag == "Player")
         {
-            if(!infoButton.activeSelf) infoButton.SetActive(true);
-
-            if (Input.GetAxis("Vertical") > 0.1f)
+            if (!obtained)
             {
-                getInfo();
+                if (!infoButton.activeSelf) infoButton.SetActive(true);
+
+                if (Input.GetAxis("Vertical") > 0.1f)
+                {
+                    getInfo();
+                }
             }
         }
     }

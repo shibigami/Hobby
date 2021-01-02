@@ -10,7 +10,7 @@ public class Chest : MonoBehaviour
     public int gold;
     public GameObject goldPrefab;
 
-    private bool opened;
+    public bool opened { get; private set; }
 
     // Start is called before the first frame update
     void Start()

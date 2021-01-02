@@ -10,8 +10,8 @@ public class Water : MonoBehaviour
     {
         if (collision.tag == "Player") 
         {
-            collision.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-            collision.GetComponent<Rigidbody2D>().AddForce(force);
+            collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            collision.gameObject.GetComponent<Rigidbody2D>().velocity=(force);
         }
     }
 }

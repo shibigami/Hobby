@@ -86,3 +86,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.2
+  minSize: {x: 1, y: 1}
+  maxSize: {x: 1.2, y: 1.2}
+  step: 0.75
+  sizeUpdate: 0.45

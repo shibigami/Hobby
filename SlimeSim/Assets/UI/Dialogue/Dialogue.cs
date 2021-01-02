@@ -16,7 +16,7 @@ public class Dialogue : MonoBehaviour
         textBox.text = "";
         textQueue = new List<string>();
 
-        InvokeRepeating("UpdateDialogue",0,0.25f);
+        InvokeRepeating("UpdateDialogue",0,0.3f);
     }
 
     // Update is called once per frame
@@ -24,8 +24,8 @@ public class Dialogue : MonoBehaviour
     {
         if (textQueue.Count > 0)
         {
-            if (!balloon.activeSelf) balloon.SetActive(true);
             textBox.text = textQueue[0];
+            if (!balloon.activeSelf) balloon.SetActive(true);
         }
     }
 
@@ -34,9 +34,9 @@ public class Dialogue : MonoBehaviour
         if (!textQueue.Contains(text)) textQueue.Add(text);
     }
 
-    public void HideDialogue() 
+    public void HideDialogue()
     {
-        if(textQueue.Count<=0) balloon.SetActive(false);
-        else textQueue.RemoveAt(0);
+        textQueue.RemoveAt(0);
+        if (textQueue.Count<=0) balloon.SetActive(false);
     }
 }

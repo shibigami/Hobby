@@ -10,6 +10,8 @@ TagManager:
   - UI
   - Dialogue
   - Coin
+  - Chest
+  - Door
   layers:
   - Default
   - TransparentFX

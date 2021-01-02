@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 1711607932365105273, guid: cf903ec67fc6f9a49ac9d53db3edcd8c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1711607932365105275, guid: cf903ec67fc6f9a49ac9d53db3edcd8c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -187,6 +191,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6494156788764042204, guid: b8a069fbcf4f14d4f9516dfd3917321f, type: 3}
+      propertyPath: m_ColliderPaths.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6494156789826963812, guid: b8a069fbcf4f14d4f9516dfd3917321f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -235,19 +243,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grid
       objectReference: {fileID: 0}
+    - target: {fileID: 6494156789826963818, guid: b8a069fbcf4f14d4f9516dfd3917321f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8a069fbcf4f14d4f9516dfd3917321f, type: 3}
---- !u!114 &1658013445 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2992290161847180335, guid: 076e19a6dea71184cb9a24917c4195a0, type: 3}
-  m_PrefabInstance: {fileID: 8136296275743503359}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e5cdb25dfd69f9438f2eec7aba7b27f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5221359302594789508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -303,6 +304,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartHere
       objectReference: {fileID: 0}
+    - target: {fileID: 7303934219444435722, guid: 8b1d8cb807764e34e88826ad19277b23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b1d8cb807764e34e88826ad19277b23, type: 3}
 --- !u!1001 &8136296275743503359
@@ -312,37 +317,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7783905442807321791, guid: 076e19a6dea71184cb9a24917c4195a0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7783905442807321791, guid: 076e19a6dea71184cb9a24917c4195a0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1658013445}
-    - target: {fileID: 7783905442807321791, guid: 076e19a6dea71184cb9a24917c4195a0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideDialogue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7783905442807321791, guid: 076e19a6dea71184cb9a24917c4195a0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Dialogue, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 8136296275074485935, guid: 076e19a6dea71184cb9a24917c4195a0, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8136296275074485935, guid: 076e19a6dea71184cb9a24917c4195a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1149.9348
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8136296275074485935, guid: 076e19a6dea71184cb9a24917c4195a0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 495.1138
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8136296275074485935, guid: 076e19a6dea71184cb9a24917c4195a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -218.68977
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8136296275074485935, guid: 076e19a6dea71184cb9a24917c4195a0, type: 3}
       propertyPath: m_LocalRotation.w

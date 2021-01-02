@@ -11,12 +11,28 @@ public class DoorHandler : MonoBehaviour
 
     public GameObject enterSign;
 
+    //mage show door
+    public GameObject doorIndicator;
+
+    //priest show door
+    public GameObject pointLight;
+
+    private float showTimer;
+    private GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
         col = GetComponent<BoxCollider2D>();
         col.isTrigger = true;
         enterSign.SetActive(false);
+
+        doorIndicator.SetActive(false);
+        pointLight.SetActive(false);
+
+        showTimer = 0;
+
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Update()
@@ -26,6 +42,23 @@ public class DoorHandler : MonoBehaviour
             {
                 NextLevel();
             }
+
+        if (showTimer>0) 
+        {
+            showTimer -= Time.deltaTime;
+        }
+        else 
+        {
+            if (GameData.priestJoined) pointLight.SetActive(false);
+            else if (GameData.mageJoined) doorIndicator.SetActive(false);
+        }
+
+        if (doorIndicator.activeSelf) 
+        {
+            doorIndicator.GetComponent<RectTransform>().SetPositionAndRotation(
+                player.transform.position+(transform.position- player.transform.position).normalized*1.5f,
+                doorIndicator.GetComponent<RectTransform>().rotation);
+        }
     }
 
     public void NextLevel()
@@ -50,5 +83,12 @@ public class DoorHandler : MonoBehaviour
     public void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Player") enterSign.SetActive(false);
+    }
+
+    public void ShowDoor(float time) 
+    {
+        showTimer = time;
+        if (Magic.magicTypeChosen==Magic.MagicType.Priest) pointLight.SetActive(true);
+        else if (Magic.magicTypeChosen == Magic.MagicType.Mage) doorIndicator.SetActive(true);
     }
 }

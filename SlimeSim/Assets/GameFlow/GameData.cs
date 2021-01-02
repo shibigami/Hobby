@@ -8,20 +8,30 @@ public static class GameData
     public static int gold { get; private set; }
     public static int lives { get; private set; }
     public static int[] collectedPages { get; private set; }
+    public static bool goldDropUnlocked { get; private set; }
     public static bool sideKickJoined { get; private set; }
+    public static bool mageJoined { get; private set; }
+    public static bool priestJoined { get; private set; }
 
 
     public static void init() 
     {
         currentLevel = 0;
-        gold = 0;
+        gold = 999999;
         lives = 0;
+
+        Journal.init();
         collectedPages = new int[Journal.numberOfPages];
         //collected pages int array fill with 0's
         //it's value changes to 1 when the user has found the corresponding page
         for (int i = 0; i < Journal.numberOfPages; i++) collectedPages[i] = 0;
 
+        goldDropUnlocked = false;
         sideKickJoined = false;
+        mageJoined = false;
+        priestJoined = false;
+
+        Magic.init();
     }
 
     public static void NextLevel() 
@@ -42,8 +52,25 @@ public static class GameData
         collectedPages[index] = 1;
     }
 
+    public static void UnlockGoldDrop()
+    {
+        goldDropUnlocked = true;
+    }
+
     public static void SideKickJoins() 
     {
         sideKickJoined = true;
+    }
+
+    public static void MageJoins() 
+    {
+        mageJoined = true;
+        Magic.SetMagicTypeChosen(Magic.MagicType.Mage);
+    }
+
+    public static void PriestJoins() 
+    {
+        priestJoined = true;
+        Magic.SetMagicTypeChosen(Magic.MagicType.Priest);
     }
 }

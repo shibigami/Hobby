@@ -29,6 +29,7 @@ public class SideKickController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (GameData.sideKickJoined) gameObject.SetActive(false);
         rb2d = GetComponent<Rigidbody2D>();
         rb2d.bodyType = RigidbodyType2D.Static;
         agentState = agentStates.Asleep;
@@ -88,7 +89,7 @@ public class SideKickController : MonoBehaviour
                         pickUpTimer -= Time.deltaTime;
                         if (pickUpTimer < 0)
                         {
-                            if (coinsPicked > 5) agentState = agentStates.Joined;
+                            if (coinsPicked >= 5) agentState = agentStates.Joined;
                             else agentState = agentStates.Helped;
                         }
                     }
@@ -99,6 +100,8 @@ public class SideKickController : MonoBehaviour
                     rb2d.bodyType = RigidbodyType2D.Static;
                     GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("Yes, this Shiny.\nI happy for now. Hm...");
                     agentState = agentStates.MoveBack;
+
+                    Journal.UpdateSideKickBranch();
                     break;
                 }
             case agentStates.Joined:
@@ -107,6 +110,8 @@ public class SideKickController : MonoBehaviour
                     GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("That's many shiny... I go with you.\nFind more Shiny. Then, we Shiny together. Yes, hm...");
                     GameData.SideKickJoins();
                     agentState = agentStates.MoveBack;
+
+                    Journal.UpdateSideKickBranch();
                     break;
                 }
             case agentStates.MoveBack: 
