@@ -13,6 +13,8 @@ public class Priest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (GameData.priestJoined) gameObject.SetActive(false);
+
         startingPos = transform.position;
         walkRight = true;
         agentState = AgentStates.Idle;

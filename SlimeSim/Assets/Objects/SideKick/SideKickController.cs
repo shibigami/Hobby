@@ -29,7 +29,8 @@ public class SideKickController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (GameData.sideKickJoined) gameObject.SetActive(false);
+        if (GameData.sideKickJoined||GameData.gold<=0) gameObject.SetActive(false);
+
         rb2d = GetComponent<Rigidbody2D>();
         rb2d.bodyType = RigidbodyType2D.Static;
         agentState = agentStates.Asleep;

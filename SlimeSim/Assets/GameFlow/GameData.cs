@@ -17,7 +17,7 @@ public static class GameData
     public static void init() 
     {
         currentLevel = 0;
-        gold = 999999;
+        gold = 0;
         lives = 0;
 
         Journal.init();

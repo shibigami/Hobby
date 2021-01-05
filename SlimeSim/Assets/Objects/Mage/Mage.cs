@@ -26,6 +26,7 @@ public class Mage : MonoBehaviour
     void Start()
     {
         if (GameData.mageJoined) gameObject.SetActive(false);
+
         initialPos = (Vector2)transform.position;
         ascend = true;
         maxY = initialPos.y + 0.1f;

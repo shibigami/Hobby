@@ -26,7 +26,8 @@ public static class Journal
             "But, afraid of this unfamiliar, it cowers around it.\n";
         pages[2] = "This unfamiliar grows as time carries me around what was once unseen.\n" +
             "Slowly I feel a sense growing, as if wrapped around my own being.\n";
-        pages[3] = "";
+        pages[3] = "Uncertainty, greed, power... Freedom... This yearning grows for each passing.\n" +
+            "Is it because of what sought to follow me? Is it because of what I have managed to achieve?\n";
         pages[4] = "";
         pages[5] = "";
         pages[6] = "";
@@ -67,14 +68,34 @@ public static class Journal
     public static void UpdateMagePriestBranch()
     {
         if (GameData.mageJoined)
+        {
             pages[2] += "But this shade, that demands more and more power...\n" +
                 "Numbs this feeling. Instead, from my insides, there's a much more overpowering sensation...\n";
+
+            pages[3] += "Or because of what I feel now growing inside of me...?\n" +
+                "After accepting this strangers power... But I need more! Keke...\n" +
+                "No!!... I must press forward, until there is no more Shade!\n";
+        }
         else if (GameData.priestJoined)
+        {
             pages[2] += "And this being of unfamiliar, that asks for what follows me...\n" +
                 "They wrap around me in the same way... But what could this mean?\n";
+
+            pages[3] += "But this fellow, that moves by my side, holds these feelings near but far.\n" +
+                "I can continue safely as I traverse these lands, now more and more filled with Light.\n" +
+                "And count these blessings each time I find myself moving forward.";
+        }
         else
+        {
             pages[2] += "And it becomes more and more familiar, replacing what once I had assumed\n" +
                 "had been all. The only thing that, around me, all had consumed...\n";
+
+            pages[3] += "Or perhaps, for the decisions I've made on each encounter.\n" +
+                "To show resolution in the path that I take and to keep moving through\n" +
+                "these lands that seek to throw challenge after challenge in my wake.\n";
+        }
+
         pages[2] += "Despite what has happened, I must carry on... To somewhere I have not yet gone.";
+
     }
 }

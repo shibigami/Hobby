@@ -12,6 +12,8 @@ TagManager:
   - Coin
   - Chest
   - Door
+  - BigChest
+  - UIActiveSpells
   layers:
   - Default
   - TransparentFX

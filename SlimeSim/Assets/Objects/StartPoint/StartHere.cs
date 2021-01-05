@@ -11,6 +11,8 @@ public class StartHere : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("Player").transform.position = transform.position;
             GameObject.FindGameObjectWithTag("Player").transform.rotation = new Quaternion(0, 0, 0, 0);
+
+            GameObject.FindGameObjectWithTag("UIActiveSpells").GetComponent<UISpellBehaviors>().OnSceneChanged();
         }
         catch 
         {

@@ -5863,6 +5863,10 @@ PrefabInstance:
       propertyPath: pageNumber
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1778597760, guid: ba9b0f270b0db3448a744e024fc4b185, type: 3}
+      propertyPath: pagesIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3939482432729919589, guid: ba9b0f270b0db3448a744e024fc4b185, type: 3}
       propertyPath: m_RootOrder
       value: 5

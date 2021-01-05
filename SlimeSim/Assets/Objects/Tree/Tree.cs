@@ -5,7 +5,7 @@ using UnityEngine;
 public class Tree : MonoBehaviour
 {
     public GameObject infoButton;
-    public int pageNumber;
+    public int pagesIndex;
     private bool obtained;
 
     // Start is called before the first frame update
@@ -13,7 +13,7 @@ public class Tree : MonoBehaviour
     {
         infoButton.SetActive(false);
         obtained = false;
-        pageNumber = Mathf.Clamp(pageNumber, 0, Journal.numberOfPages);
+        pagesIndex = Mathf.Clamp(pagesIndex, 0, Journal.numberOfPages);
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class Tree : MonoBehaviour
 
     public void getInfo() 
     {
-        GameData.AddPageToCollection(pageNumber);
+        GameData.AddPageToCollection(pagesIndex);
         obtained = true;
         infoButton.SetActive(false);
         if (!GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().journalUnlocked)

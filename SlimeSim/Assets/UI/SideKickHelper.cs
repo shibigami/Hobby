@@ -20,17 +20,20 @@ public class SideKickHelper : MonoBehaviour
 
     private void UpdateLookForChest()
     {
-        if (!IsThereUnopenedChests())
-        {
-            balloon.SetActive(false);
-            text.SetActive(false);
-            normalChestIcon.SetActive(false);
-        }
-        else
+        if (IsThereUnopenedChests()) normalChestIcon.SetActive(true);
+        else normalChestIcon.SetActive(false);
+        if (IsThereBigChests()) bigChestIcon.SetActive(true);
+        else bigChestIcon.SetActive(false);
+
+        if (bigChestIcon.activeSelf || normalChestIcon.activeSelf)
         {
             balloon.SetActive(true);
             text.SetActive(true);
-            normalChestIcon.SetActive(true);
+        }
+        else if (!bigChestIcon.activeSelf && !normalChestIcon.activeSelf)
+        {
+            balloon.SetActive(false);
+            text.SetActive(false);
         }
     }
 
@@ -43,6 +46,15 @@ public class SideKickHelper : MonoBehaviour
                 if (!chest.GetComponent<Chest>().opened) return true;
 
             return false;
+        }
+        else return false;
+    }
+
+    private bool IsThereBigChests() 
+    {
+        if (GameObject.FindGameObjectWithTag("BigChest"))
+        {
+            return true;
         }
         else return false;
     }
