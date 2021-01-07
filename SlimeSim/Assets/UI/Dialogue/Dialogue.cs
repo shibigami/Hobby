@@ -39,4 +39,9 @@ public class Dialogue : MonoBehaviour
         textQueue.RemoveAt(0);
         if (textQueue.Count<=0) balloon.SetActive(false);
     }
+
+    public bool IsChatShowing() 
+    {
+        return balloon.activeSelf;
+    }
 }

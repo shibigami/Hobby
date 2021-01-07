@@ -35,6 +35,8 @@ public class PlayerAnimationHandler : MonoBehaviour
         controller.agentState == PlayerController.agentStates.Iddle ||
         controller.agentState == PlayerController.agentStates.Running));
         animator.SetBool("Sit", (controller.agentState == PlayerController.agentStates.Sit));
+        animator.SetBool("Mounting", controller.agentState == PlayerController.agentStates.Mounting);
+        animator.SetBool("Mounted", controller.agentState == PlayerController.agentStates.Mounted);
 
         //set iddle animation timer
         if (controller.agentState == PlayerController.agentStates.Iddle) idleTimer -= Time.deltaTime;

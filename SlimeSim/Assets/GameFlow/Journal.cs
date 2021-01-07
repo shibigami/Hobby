@@ -28,7 +28,9 @@ public static class Journal
             "Slowly I feel a sense growing, as if wrapped around my own being.\n";
         pages[3] = "Uncertainty, greed, power... Freedom... This yearning grows for each passing.\n" +
             "Is it because of what sought to follow me? Is it because of what I have managed to achieve?\n";
-        pages[4] = "";
+        pages[4] = "What strange figure, floating in place, as if in wait for long.\n" +
+            "It paced itself midair, covered by a shadow that pushed me further\n" +
+            " the closer I attempted to be.\n";
         pages[5] = "";
         pages[6] = "";
         pages[7] = "";
@@ -75,6 +77,10 @@ public static class Journal
             pages[3] += "Or because of what I feel now growing inside of me...?\n" +
                 "After accepting this strangers power... But I need more! Keke...\n" +
                 "No!!... I must press forward, until there is no more Shade!\n";
+
+            pages[4] += "It seemed to have mentioned me, Kekeke...\n" +
+                "... It seems to have mentioned the Shade that now haunts me.\n" +
+                "With most familiarity...\n";
         }
         else if (GameData.priestJoined)
         {
@@ -84,6 +90,10 @@ public static class Journal
             pages[3] += "But this fellow, that moves by my side, holds these feelings near but far.\n" +
                 "I can continue safely as I traverse these lands, now more and more filled with Light.\n" +
                 "And count these blessings each time I find myself moving forward.";
+
+            pages[4] += "It seemed to dislike the Hope that joined this journey.\n" +
+                "Perhaps this will be the prayer that keeps it at bay...\n" +
+                "Perhaps this will only result in disarray...\n";
         }
         else
         {
@@ -97,5 +107,9 @@ public static class Journal
 
         pages[2] += "Despite what has happened, I must carry on... To somewhere I have not yet gone.";
 
+        pages[4] += "And he spoke of others, have they been watching as well?\n" +
+            "Or could it be just a bluff, a trickery to throw me off my path?\n" +
+            "But for what reason?... No matter, the time of light is due.\n" +
+            "And this fiend... I shan't follow you!";
     }
 }

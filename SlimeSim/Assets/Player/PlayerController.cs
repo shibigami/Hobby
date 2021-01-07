@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
         TurnToStand,
         Landing,
         Sit,
+        Mounting,
         Mounted
     }
 
@@ -188,6 +189,11 @@ public class PlayerController : MonoBehaviour
                     if (MovementIntent()) agentState = agentStates.Iddle;
                     break;
                 }
+            case agentStates.Mounting: 
+                {
+                    agentState = agentStates.Mounted;
+                    break;
+                }
             case agentStates.Mounted:
                 {
                     if (mount != null)
@@ -238,7 +244,7 @@ public class PlayerController : MonoBehaviour
 
     public void Mount(GameObject mountObject,float mount_Speed) 
     {
-        agentState = agentStates.Mounted;
+        agentState = agentStates.Mounting;
         mount = mountObject;
         mountSpeed = mount_Speed;
         mountRb2d = mount.GetComponent<Rigidbody2D>();

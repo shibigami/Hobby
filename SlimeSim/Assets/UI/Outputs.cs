@@ -51,7 +51,7 @@ public class Outputs : MonoBehaviour
         InvokeRepeating("UpdateUI", 0, 0.5f);
     }
 
-    void UpdateUI()
+    private void UpdateUI()
     {
         goldText.text = GameData.gold.ToString();
         livesText.text = GameData.lives.ToString();
