@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationObject: {fileID: 4148857506178015089}
   disapearTime: 0.75
+  pickUpRange: 1.75
 --- !u!61 &6287234467677434478
 BoxCollider2D:
   m_ObjectHideFlags: 0

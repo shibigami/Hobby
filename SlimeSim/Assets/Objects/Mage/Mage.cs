@@ -74,7 +74,7 @@ public class Mage : MonoBehaviour
                     if (coinsAbsorbed >= 10)
                     {
                         GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("Yes!! So much POWER!!!");
-                        GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("Kekekeke! I will grant you part of my power if you give me more!!");
+                        GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("Kekekeke!\nI will grant you part of my power if you give me more!!");
                         GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("I'll follow you. For now...");
                         GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("KeKeKeKwakekeke.");
 

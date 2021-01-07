@@ -85,8 +85,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9731120465a4784eae0d396530959a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.2
-  minSize: {x: 1, y: 1}
-  maxSize: {x: 1.2, y: 1.2}
-  step: 0.75
-  sizeUpdate: 0.45
+  player: {fileID: 0}
+  speed: 2

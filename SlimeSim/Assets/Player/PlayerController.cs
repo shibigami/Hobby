@@ -15,7 +15,8 @@ public class PlayerController : MonoBehaviour
         Jumping,
         TurnToStand,
         Landing,
-        Sit
+        Sit,
+        Mounted
     }
 
     public agentStates agentState { get; private set; }
@@ -37,6 +38,16 @@ public class PlayerController : MonoBehaviour
     //android controls
     public GameObject analog;
     private AnalogTouchControls analogControls;
+
+    //mounts
+    public GameObject mount { get; private set; }
+    private float mountSpeed;
+    private Rigidbody2D mountRb2d;
+
+    private void Awake()
+    {
+        QualitySettings.vSyncCount = 1;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -103,16 +114,8 @@ public class PlayerController : MonoBehaviour
     {
         if (getUpTimer <= 0)
         {
-            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
-            {
-                rb2d.AddForce(new Vector2(0, getUpJumpForce * 3));
-                rb2d.AddTorque(getUpRotationIncrement * 3);
-            }
-            else
-            {
-                rb2d.AddForce(new Vector2(0, getUpJumpForce));
-                rb2d.AddTorque(getUpRotationIncrement);
-            }
+            rb2d.velocity += new Vector2(0, getUpJumpForce);
+            rb2d.AddTorque(getUpRotationIncrement);
         }
         else
         {
@@ -185,6 +188,23 @@ public class PlayerController : MonoBehaviour
                     if (MovementIntent()) agentState = agentStates.Iddle;
                     break;
                 }
+            case agentStates.Mounted:
+                {
+                    if (mount != null)
+                    {
+                        if (Application.platform == RuntimePlatform.Android)
+                            mountRb2d.velocity = new Vector3(analogControls.AnalogPosition().normalized.x,
+                                analogControls.AnalogPosition().normalized.y, 0) * Time.deltaTime * mountSpeed;
+                        else
+                            mountRb2d.velocity = new Vector3(Input.GetAxis("Horizontal"),
+                                Input.GetAxis("Vertical"), 0) * Time.deltaTime * mountSpeed;
+
+                        transform.position = mount.transform.position + new Vector3(0, 0.35f, 0);
+                    }
+                    else Dismount();
+
+                    break;
+                }
         }
 
         //on mage unlock
@@ -214,5 +234,28 @@ public class PlayerController : MonoBehaviour
     public void Sit()
     {
         if (agentState == agentStates.Iddle) agentState = agentStates.Sit;
+    }
+
+    public void Mount(GameObject mountObject,float mount_Speed) 
+    {
+        agentState = agentStates.Mounted;
+        mount = mountObject;
+        mountSpeed = mount_Speed;
+        mountRb2d = mount.GetComponent<Rigidbody2D>();
+
+        rb2d.freezeRotation = true;
+
+        //disable interaction by setting the tag to default
+        tag = "Untagged";
+    }
+
+    public void Dismount() 
+    {
+        agentState = agentStates.Iddle;
+
+        rb2d.freezeRotation = false;
+
+        //reenable interaction by re-setting the tag
+        tag = "Player";
     }
 }

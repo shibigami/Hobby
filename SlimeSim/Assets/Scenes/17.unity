@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 518029752108863017, guid: 8a4afc601ee64ab419bb4d2db1c50aff, type: 3}
       propertyPath: gold
-      value: 50
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5647117663901328172, guid: 8a4afc601ee64ab419bb4d2db1c50aff, type: 3}
       propertyPath: m_Name
@@ -351,11 +351,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2022709091294867462, guid: 861692d030d61ad418b36d7f52f3e7df, type: 3}
       propertyPath: amountGiven
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2022709091294867462, guid: 861692d030d61ad418b36d7f52f3e7df, type: 3}
       propertyPath: maxAbsorbAmount
-      value: 25
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5204201863244910895, guid: 861692d030d61ad418b36d7f52f3e7df, type: 3}
       propertyPath: m_Name
@@ -434,7 +434,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 518029752108863017, guid: 8a4afc601ee64ab419bb4d2db1c50aff, type: 3}
       propertyPath: gold
-      value: 150
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5647117663901328172, guid: 8a4afc601ee64ab419bb4d2db1c50aff, type: 3}
       propertyPath: m_Name
@@ -596,11 +596,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2022709091294867462, guid: 861692d030d61ad418b36d7f52f3e7df, type: 3}
       propertyPath: amountGiven
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2022709091294867462, guid: 861692d030d61ad418b36d7f52f3e7df, type: 3}
       propertyPath: maxAbsorbAmount
-      value: 75
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5204201863244910895, guid: 861692d030d61ad418b36d7f52f3e7df, type: 3}
       propertyPath: m_Name
@@ -785,6 +785,14 @@ PrefabInstance:
       propertyPath: mimic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2022709091294867462, guid: 861692d030d61ad418b36d7f52f3e7df, type: 3}
+      propertyPath: amountGiven
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2022709091294867462, guid: 861692d030d61ad418b36d7f52f3e7df, type: 3}
+      propertyPath: maxAbsorbAmount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5204201863244910895, guid: 861692d030d61ad418b36d7f52f3e7df, type: 3}
       propertyPath: m_Name
       value: ChestMaker (1)
@@ -927,7 +935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3774119684636377065, guid: bf6ac7249e3ea3247be419be62d0b253, type: 3}
       propertyPath: force.y
-      value: -2
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 7284156344372670133, guid: bf6ac7249e3ea3247be419be62d0b253, type: 3}
       propertyPath: m_RootOrder

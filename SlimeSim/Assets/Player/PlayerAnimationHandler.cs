@@ -24,7 +24,7 @@ public class PlayerAnimationHandler : MonoBehaviour
     void Update()
     {
         //flip character according to direction of movement
-        if (controller.moveVector.x > 0 && transform.localScale.x == -1) transform.localScale = Vector3.one;
+        if (controller.moveVector.x > 0 && transform.localScale.x == -1) transform.localScale = new Vector3(1, 1, 1);
         else if (controller.moveVector.x < 0 && transform.localScale.x == 1) transform.localScale = new Vector3(-1, 1, 1);
 
         animator.SetFloat("x", Mathf.Sqrt(Mathf.Pow(controller.moveVector.x, 2)));

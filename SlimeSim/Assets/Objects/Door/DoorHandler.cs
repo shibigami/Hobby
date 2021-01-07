@@ -77,7 +77,11 @@ public class DoorHandler : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player") enterSign.SetActive(true); 
+        if (collision.tag == "Player") enterSign.SetActive(true);
+        else if (collision.tag == "Mount")
+        {
+            if (enterSign.activeSelf) enterSign.SetActive(false);
+        }
     }
 
     public void OnTriggerExit2D(Collider2D collision)

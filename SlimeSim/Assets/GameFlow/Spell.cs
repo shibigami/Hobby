@@ -98,4 +98,9 @@ public class Spell
         }
         else return false;
     }
+
+    public void SetRemainingCoolDown(int remainingTimeSeconds) 
+    {
+        nextUseTimeStamp = Time.time + remainingTimeSeconds;
+    }
 }

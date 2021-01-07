@@ -316,7 +316,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 34241921219088503}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 717.94}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 717.941}
 --- !u!212 &4661948102967737987
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5365,7 +5365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4754712568547169344}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.55, y: -2.23, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 315153392913819879}
@@ -5410,9 +5410,9 @@ MonoBehaviour:
   speed: 550
   maxVel: 2
   jumpForce: 250
-  getUpRotationIncrement: 2
-  getUpJumpForce: 35
-  getUpWaitTime: 1.2
+  getUpRotationIncrement: 5
+  getUpJumpForce: 3
+  getUpWaitTime: 1
   mageParticles: {fileID: 7879093061981697067}
   priestParticles: {fileID: 3525077256981767967}
   analog: {fileID: 0}
@@ -5497,7 +5497,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3424715725204937927}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1111.23}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1111.229}
 --- !u!1 &5585087812392721794
 GameObject:
   m_ObjectHideFlags: 0
@@ -5527,7 +5527,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6632197612495957032}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 347.148}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 347.147}
 --- !u!1 &6393524334422315677
 GameObject:
   m_ObjectHideFlags: 0

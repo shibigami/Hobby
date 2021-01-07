@@ -26,19 +26,29 @@ public class Bush : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D collision)
     {
-        if (inputDelayTimer <= 0)
+        if (collision.tag == "Player")
         {
-            if (!indicator.activeSelf)
+            if (inputDelayTimer <= 0)
             {
-                indicator.SetActive(true);
+                if (!indicator.activeSelf)
+                {
+                    indicator.SetActive(true);
+                }
+                if (Input.GetAxis("Vertical") > 0.1f) Teleport();
             }
-            if (Input.GetAxis("Vertical") > 0.1f) Teleport();
+        }
+        else if (collision.tag == "Mount") 
+        {
+            if (indicator.activeSelf) indicator.SetActive(false);
         }
     }
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        if (indicator.activeSelf) indicator.SetActive(false);
+        if (collision.tag == "Player")
+        {
+            if (indicator.activeSelf) indicator.SetActive(false);
+        }
     }
 
     public void Teleport()

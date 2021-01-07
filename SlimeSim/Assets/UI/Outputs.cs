@@ -96,11 +96,11 @@ public class Outputs : MonoBehaviour
     {
         if (GameData.gold >= amount)
         {
-            GameData.AddGold(-amount);
+            GameData.AddGold(-amount*10);
             for (int i = 0; i < amount; i++)
             {
                 GameObject temp = Instantiate(goldCoin, player.transform.position, new Quaternion(0, 0, 0, 0));
-                temp.GetComponent<Coin>().SetThrowned(20f);
+                temp.GetComponent<Coin>().SetThrowned(5);
             }
         }
     }
