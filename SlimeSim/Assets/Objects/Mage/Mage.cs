@@ -88,7 +88,6 @@ public class Mage : MonoBehaviour
                     if (!GameData.mageJoined)
                     {
                         GameData.MageJoins();
-                        Journal.UpdateMagePriestBranch();
                         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().mageParticles.SetActive(true);
                     }
                     break;

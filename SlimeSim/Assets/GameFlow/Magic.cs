@@ -31,7 +31,7 @@ public static class Magic
         mageSpells[3].SetDescription("Takes Gmooh back to the start of the stage.");
         //unlocks place a cloud mechanic, allowing players to fly
         //power is the max amount of time a player can fly
-        mageSpells[4] = new Spell("Tangible Shade", 0, 10, 1000, 10, 150);
+        mageSpells[4] = new Spell("Tangible Shade", 0, 5, 1000, 10, 150);
         mageSpells[4].SetDescription("Allows Gmooh to conjure a Cloud. 150 sec. cooldown.");
         //allows the player to create a point that allows him to teleport to
         //power level is the teleport uses per level
@@ -62,7 +62,7 @@ public static class Magic
         priestSpells[3].SetDescription("Takes Gmooh back to the start of the stage.");
         //unlocks place a cloud mechanic, allowing players to fly
         //power is the max amount of time a player can fly
-        priestSpells[4] = new Spell("Heaven's Volume", 0, 10, 1000, 12, 180);
+        priestSpells[4] = new Spell("Heaven's Volume", 0, 5, 1000, 7, 180);
         priestSpells[4].SetDescription("Allows Gmooh to conjure a Cloud. 180 sec. cooldown.");
         //allows the player to shoot a light projectile around him
         //power level is the radius

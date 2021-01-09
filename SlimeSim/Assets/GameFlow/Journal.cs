@@ -30,10 +30,21 @@ public static class Journal
             "Is it because of what sought to follow me? Is it because of what I have managed to achieve?\n";
         pages[4] = "What strange figure, floating in place, as if in wait for long.\n" +
             "It paced itself midair, covered by a shadow that pushed me further\n" +
-            " the closer I attempted to be.\n";
-        pages[5] = "";
-        pages[6] = "";
-        pages[7] = "";
+            "the closer I attempted to be.\n";
+        pages[5] = "Before this Light showed up all I did was stumble in the Dark.\n" +
+            "Before this Light came along all I did was pace myself\n" +
+            "slowly as I tried finding my way around these Lands.\n" +
+            "Before this Light came along... I had nothing...\n" +
+            "And now, I can pursue all I can be. And new places to see.";
+        pages[6] = "The magnitude of my surroundings is overbearing.\n" +
+            "The uncertainty that there might be something more beyond the Light.\n" +
+            "Or there might be nothing but a shadowy Abyss.\n" +
+            "But the excitment doesn't fully allow me to thread carefully.\n" +
+            "Long have I threaded full of care. Now...\n" +
+            "My will pushes me to leave this nightmare!";
+        pages[7] = "I heard a pleasant sound once. It muffled all other sounds around.\n" +
+            "As I sat, listening in on this harmony, feelings of comfort settled.\n" +
+            "And I sat on, letting it carry my comfort until it stopped.\n";
         pages[8] = "";
         pages[9] = "";
         pages[10] = "";
@@ -76,11 +87,15 @@ public static class Journal
 
             pages[3] += "Or because of what I feel now growing inside of me...?\n" +
                 "After accepting this strangers power... But I need more! Keke...\n" +
-                "No!!... I must press forward, until there is no more Shade!\n";
+                "No!!... I must press forward, until there is no more Shade!";
 
             pages[4] += "It seemed to have mentioned me, Kekeke...\n" +
                 "... It seems to have mentioned the Shade that now haunts me.\n" +
                 "With most familiarity...\n";
+
+            pages[7] += "... Kekeke. It must be her! I knew she was around!!!\n" +
+                "KekakakaKekeka!\n" +
+                "Stop!! I am me! Get away from my consciousness, fiend!!";
         }
         else if (GameData.priestJoined)
         {
@@ -94,7 +109,13 @@ public static class Journal
             pages[4] += "It seemed to dislike the Hope that joined this journey.\n" +
                 "Perhaps this will be the prayer that keeps it at bay...\n" +
                 "Perhaps this will only result in disarray...\n";
+
+            pages[7] += "... Yes, my Lady... I knew I felt her Light as well at some point.\n" +
+                "Was it this you felt?...\n" +
+                "Hums echoed atop my head. But the comfort was not the same..\n" +
+                "The intensity was short to the one that this comfort inflamed.";
         }
+        //before getting the mage or priest
         else
         {
             pages[2] += "And it becomes more and more familiar, replacing what once I had assumed\n" +
@@ -102,7 +123,7 @@ public static class Journal
 
             pages[3] += "Or perhaps, for the decisions I've made on each encounter.\n" +
                 "To show resolution in the path that I take and to keep moving through\n" +
-                "these lands that seek to throw challenge after challenge in my wake.\n";
+                "these lands that seek to throw challenge after challenge in my wake.";
         }
 
         pages[2] += "Despite what has happened, I must carry on... To somewhere I have not yet gone.";

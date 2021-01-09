@@ -44,4 +44,10 @@ public class Dialogue : MonoBehaviour
     {
         return balloon.activeSelf;
     }
+
+    public void ClearDialogue() 
+    {
+        textQueue.Clear();
+        balloon.SetActive(false);
+    }
 }

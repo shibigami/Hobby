@@ -13,7 +13,6 @@ public class Tree : MonoBehaviour
     {
         infoButton.SetActive(false);
         obtained = false;
-        pagesIndex = Mathf.Clamp(pagesIndex, 0, Journal.numberOfPages);
     }
 
     // Update is called once per frame

@@ -45,6 +45,9 @@ public class PlayerController : MonoBehaviour
     private float mountSpeed;
     private Rigidbody2D mountRb2d;
 
+    //death particles
+    public GameObject deathParticles;
+
     private void Awake()
     {
         QualitySettings.vSyncCount = 1;
@@ -77,13 +80,23 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
+        //death particles
+        Instantiate(deathParticles, transform.position, transform.rotation);
+        //move player to start of stage
         transform.position = GameObject.FindGameObjectWithTag("StartPoint").transform.position;
+        //set velocity
         rb2d.velocity = new Vector2(0, 0);
+        //set movement cast vector
         moveVector = new Vector2(0, 0);
+        //set rotation
         transform.rotation = new Quaternion(0, 0, 0, 0);
+        //and torque
         rb2d.SetRotation(0);
+        //reset looking direction
         transform.localScale = Vector3.one;
+        //reset getting up timer
         getUpTimer = getUpWaitTime;
+        //gamedata logic when death occurs
         GameData.Die();
     }
 

@@ -168,13 +168,13 @@ public class UISpellBehaviors : MonoBehaviour
 
     private void CreateDarkPlatform()
     {
-        GameObject temp = Instantiate(darkPlatform, player.transform.position + new Vector3(0, 0.5f, 0), darkPlatform.transform.rotation);
+        GameObject temp = Instantiate(darkPlatform, player.transform.position + new Vector3(0, 0, 0), darkPlatform.transform.rotation);
         temp.GetComponent<CloudController>().SetLifeTimer((int)Magic.mageSpells[4].GetPower());
     }
 
     private void CreateLightPlatform()
     {
-        GameObject temp = Instantiate(lightPlatform, player.transform.position + new Vector3(0, 0.5f, 0), lightPlatform.transform.rotation);
+        GameObject temp = Instantiate(lightPlatform, player.transform.position + new Vector3(0, 0, 0), lightPlatform.transform.rotation);
         temp.GetComponent<CloudController>().SetLifeTimer((int)Magic.priestSpells[4].GetPower());
     }
 

@@ -1,0 +1,663 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.0f1 (3721df5a8b28) revision 3613151'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 15961 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/vitor/OneDrive/Documents/GitHub/Hobby/SlimeSim
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54852
+Successfully changed project path to: C:/Users/vitor/OneDrive/Documents/GitHub/Hobby/SlimeSim
+C:/Users/vitor/OneDrive/Documents/GitHub/Hobby/SlimeSim
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 118.05 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.0f1 (3721df5a8b28)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/vitor/OneDrive/Documents/GitHub/Hobby/SlimeSim/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Plus Graphics (ID=0x8a52)
+    Vendor:   
+    VRAM:     7980 MB
+    Driver:   27.20.100.8783
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56444
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002094 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 90.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.389 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003246 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 91.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.693 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2838 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.0 MB.
+System memory in use after: 147.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3308.
+Total: 2.797500 ms (FindLiveObjects: 0.245500 ms CreateObjectMapping: 0.167300 ms MarkObjects: 2.339400 ms  DeleteObjects: 0.043100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002624 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.345 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.4 MB.
+System memory in use after: 140.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3310.
+Total: 3.054600 ms (FindLiveObjects: 0.351300 ms CreateObjectMapping: 0.270200 ms MarkObjects: 2.396900 ms  DeleteObjects: 0.032200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003038 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.136 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2729 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.5 MB.
+System memory in use after: 140.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3312.
+Total: 2.140700 ms (FindLiveObjects: 0.217800 ms CreateObjectMapping: 0.116200 ms MarkObjects: 1.786600 ms  DeleteObjects: 0.018200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Objects/FakeWall
+  artifactKey: Guid(f6df03cbfae90de468b2e502219766e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall using Guid(f6df03cbfae90de468b2e502219766e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '545f3b7584508b982f0069f2fd6b088b') in 0.006730 seconds
+  Import took 0.011573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.371712 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb07dde289edb425ba8d6cffbfcffce') in 0.318996 seconds
+  Import took 0.330225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.709056 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e90d006c2307eab247f6c8915d6d28ca') in 0.022957 seconds
+  Import took 0.030199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.975645 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cfd08b83889f2c1d72d35b85d0bf362') in 0.030736 seconds
+  Import took 0.039200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.440871 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90be9c0f69f8efc8820c20a60713aa76') in 0.043594 seconds
+  Import took 0.049403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.299902 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f320d9e1b2df9839cafc73bb6cca4301') in 0.039925 seconds
+  Import took 0.049373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.848425 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a701516af7f5e5b4d5aa8677e4e682') in 0.025791 seconds
+  Import took 0.034776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.254038 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6e26b8a7b1f3b76437a2ba769240c1') in 0.027952 seconds
+  Import took 0.035790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.038427 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc30e160128c0510c7c833884040a73d') in 0.036329 seconds
+  Import took 0.045264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.783944 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7abff635aadcc54a829e838790e7ad4') in 0.029684 seconds
+  Import took 0.034838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.389527 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ed7e3b99d1387a6eb6b5508e16b3ba') in 0.037787 seconds
+  Import took 0.045945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.204569 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c88d7cfcfe63375a6f1f6812dd786ec8') in 0.023646 seconds
+  Import took 0.030865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.246611 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f16317d00234bca75ae0aa69d9833b29') in 0.024720 seconds
+  Import took 0.030762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.972075 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '819c6ef0d2efaa1daf73f9f489382f58') in 0.026052 seconds
+  Import took 0.031584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.344452 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8525fd2ba27f22b9d122eadf4a9cb47d') in 0.020669 seconds
+  Import took 0.026546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.805811 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2a8c040fbed9192cf3de20a02a930f') in 0.025884 seconds
+  Import took 0.032191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.683345 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36d3af520e2c51cee1a877c74eac89ab') in 0.021899 seconds
+  Import took 0.027721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.948959 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b4b75ec6f67851ace31dc74e65a0eb') in 0.026986 seconds
+  Import took 0.033001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.632330 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d6c1809ad84a66ec1721a1a98698d87') in 0.021076 seconds
+  Import took 0.028600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.011266 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0369f4a63414b7d02e35d8da6cbfb0b0') in 0.027483 seconds
+  Import took 0.033336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.342714 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '823e3347dee70cc2d5c7d693116baea7') in 0.026931 seconds
+  Import took 0.032728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.804339 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18f5802af2ddf9b3452739a26ccbff33') in 0.035419 seconds
+  Import took 0.044864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.992041 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e8900021d046fbec0d17181ab67ffc4') in 0.029630 seconds
+  Import took 0.035733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.262830 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9066ac4ecb1600931a13e5459bf08d') in 0.031028 seconds
+  Import took 0.039026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.215641 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58eb2ba8cc6d088040a507826168afcc') in 0.037152 seconds
+  Import took 0.047819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.858601 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65f8c614782ee5e30afc0b6e88c597a7') in 0.024353 seconds
+  Import took 0.029849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.880441 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15e6a0dcff2f9fc1452146538ceb718f') in 0.027886 seconds
+  Import took 0.037726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.236114 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cebe4d8f87fb778361184f8ea4b5b6a') in 0.024400 seconds
+  Import took 0.030261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.145954 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a72f7bb08b97867e6902da6d558c464') in 0.034272 seconds
+  Import took 0.043503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.847831 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '054bd6888191ffa2303be918dff81ac8') in 0.024707 seconds
+  Import took 0.030770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.466918 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e8bbe2eb1ecd7d8ec6f4ca6369d1301') in 0.025499 seconds
+  Import took 0.031140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.839618 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c7a6c4c54a718383bd0495b06bb1d5') in 0.031595 seconds
+  Import took 0.038603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.195819 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03154afa4d11497ab547a0742e7b4700') in 0.027302 seconds
+  Import took 0.033169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.673324 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '329a3d6377ffb39c08cfd1f3fdf266f4') in 0.032950 seconds
+  Import took 0.040273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 74.312559 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392b97209af2ffe19af0499af2d1c9a6') in 0.026797 seconds
+  Import took 0.033392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.750869 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb82cbba9916858089fdb04656abf901') in 0.035830 seconds
+  Import took 0.042607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.785746 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc9284a2a2698919e43358e8c12bd396') in 0.033165 seconds
+  Import took 0.038905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.418735 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5d8a630bb10d28da27d67e247f59146') in 0.039392 seconds
+  Import took 0.046605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.382618 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdf3e2328c03d238ec45de79f6c363dc') in 0.026848 seconds
+  Import took 0.033516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.677057 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e3ebcaff692f2c4a492e0abfc1d2dcf') in 0.038434 seconds
+  Import took 0.045893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.968840 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d27711d1cd74dcc5edf4c98bb795e06') in 0.028785 seconds
+  Import took 0.036941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.786654 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13855e0077e0841b941e363dd4715899') in 0.035278 seconds
+  Import took 0.045045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.570168 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20124f40f5484d416b0b68717f94e116') in 0.032282 seconds
+  Import took 0.038916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.219354 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb4b1b6c3391103abe2d1c3937ffade4') in 0.025994 seconds
+  Import took 0.033878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.180916 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc78be32d220df7912d4ae2251164e3') in 0.032358 seconds
+  Import took 0.041160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 151.283135 seconds.
+  path: Assets/Objects/FakeWall/Eye.controller
+  artifactKey: Guid(ccd4b038e6c468949ae2a22cf6feb1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/Eye.controller using Guid(ccd4b038e6c468949ae2a22cf6feb1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b7b2afd77e8030f185320d14a54899') in 0.013552 seconds
+  Import took 0.022424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.060499 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (Eye) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+The Animator Controller (Eye) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+ -> (artifact id: '1e8244f62ff1286330f7ab25aa27e64a') in 0.047155 seconds
+  Import took 0.055637 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001843 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.260 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2729 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.5 MB.
+System memory in use after: 146.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3358.
+Total: 2.711900 ms (FindLiveObjects: 0.342700 ms CreateObjectMapping: 0.109600 ms MarkObjects: 2.240900 ms  DeleteObjects: 0.017600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 85.310872 seconds.
+  path: Assets/Objects/FakeWall/FakeWall.prefab
+  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (Eye) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+The Animator Controller (Eye) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+ -> (artifact id: 'ac7959fb6647015f0bb44abadc91b4d1') in 0.218717 seconds
+  Import took 0.227785 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001943 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.596 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.9 MB.
+System memory in use after: 147.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3397.
+Total: 2.262000 ms (FindLiveObjects: 0.279900 ms CreateObjectMapping: 0.094900 ms MarkObjects: 1.865500 ms  DeleteObjects: 0.019900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001862 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.398 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.0 MB.
+System memory in use after: 147.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3399.
+Total: 3.431200 ms (FindLiveObjects: 0.479100 ms CreateObjectMapping: 0.197500 ms MarkObjects: 2.725000 ms  DeleteObjects: 0.027900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 78.848690 seconds.
+  path: Assets/Objects/FakeWall/FakeWallBehavior.cs
+  artifactKey: Guid(87b538edf8e0b6743a73287e0f6d647c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/FakeWall/FakeWallBehavior.cs using Guid(87b538edf8e0b6743a73287e0f6d647c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5938cc31380737bcdf3100a31f462207') in 0.015644 seconds
+  Import took 0.022196 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003548 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.317 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.6 MB.
+System memory in use after: 146.8 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3401.
+Total: 3.448600 ms (FindLiveObjects: 0.421100 ms CreateObjectMapping: 0.193900 ms MarkObjects: 2.785400 ms  DeleteObjects: 0.046600 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

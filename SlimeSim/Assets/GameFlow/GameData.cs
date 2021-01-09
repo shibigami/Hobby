@@ -66,11 +66,13 @@ public static class GameData
     {
         mageJoined = true;
         Magic.SetMagicTypeChosen(Magic.MagicType.Mage);
+        Journal.UpdateMagePriestBranch();
     }
 
     public static void PriestJoins() 
     {
         priestJoined = true;
         Magic.SetMagicTypeChosen(Magic.MagicType.Priest);
+        Journal.UpdateMagePriestBranch();
     }
 }

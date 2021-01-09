@@ -51,7 +51,6 @@ public class Priest : MonoBehaviour
             case AgentStates.Joining:
                 {
                     GameData.PriestJoins();
-                    Journal.UpdateMagePriestBranch();
                     GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().priestParticles.SetActive(true);
                     agentState = AgentStates.Dissapear;
                     break;
