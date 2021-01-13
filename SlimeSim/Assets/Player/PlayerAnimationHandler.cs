@@ -30,7 +30,7 @@ public class PlayerAnimationHandler : MonoBehaviour
         animator.SetFloat("x", Mathf.Sqrt(Mathf.Pow(controller.moveVector.x, 2)));
 
         //set animator bools according to player controller agent states
-        animator.SetBool("Jump", (controller.agentState == PlayerController.agentStates.Jumping));
+        animator.SetBool("Jump", (controller.agentState == PlayerController.agentStates.InAir));
         animator.SetBool("Land", (controller.agentState == PlayerController.agentStates.Landing ||
         controller.agentState == PlayerController.agentStates.Iddle ||
         controller.agentState == PlayerController.agentStates.Running));

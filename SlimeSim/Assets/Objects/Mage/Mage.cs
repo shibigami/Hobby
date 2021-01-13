@@ -89,6 +89,7 @@ public class Mage : MonoBehaviour
                     {
                         GameData.MageJoins();
                         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().mageParticles.SetActive(true);
+                        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().mageMask.SetActive(true);
                     }
                     break;
                 }

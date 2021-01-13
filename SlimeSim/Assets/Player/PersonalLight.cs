@@ -18,7 +18,7 @@ public class PersonalLight : MonoBehaviour
     void FixedUpdate()
     {
         if(CalculateDistanceToPlayer()>deadzoneRadius)
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, (distanceToPlayer+deadzoneRadius+speed)*Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, (distanceToPlayer*2.2f+deadzoneRadius+speed)*Time.deltaTime);
     }
 
     private float CalculateDistanceToPlayer() 

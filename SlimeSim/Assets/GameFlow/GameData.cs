@@ -12,12 +12,13 @@ public static class GameData
     public static bool sideKickJoined { get; private set; }
     public static bool mageJoined { get; private set; }
     public static bool priestJoined { get; private set; }
+    public static bool fakeWallJoined { get; private set; }
 
 
     public static void init() 
     {
         currentLevel = 0;
-        gold = 100000;
+        gold = 0;
         lives = 0;
 
         Journal.init();
@@ -30,6 +31,7 @@ public static class GameData
         sideKickJoined = false;
         mageJoined = false;
         priestJoined = false;
+        fakeWallJoined = false;
 
         Magic.init();
     }
@@ -74,5 +76,10 @@ public static class GameData
         priestJoined = true;
         Magic.SetMagicTypeChosen(Magic.MagicType.Priest);
         Journal.UpdateMagePriestBranch();
+    }
+
+    public static void FakeWallJoins() 
+    {
+        fakeWallJoined = true;
     }
 }

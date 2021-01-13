@@ -52,6 +52,7 @@ public class Priest : MonoBehaviour
                 {
                     GameData.PriestJoins();
                     GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().priestParticles.SetActive(true);
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().priestMask.SetActive(true);
                     agentState = AgentStates.Dissapear;
                     break;
                 }

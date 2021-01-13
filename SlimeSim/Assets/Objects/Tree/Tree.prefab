@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infoButton: {fileID: 7725069282606266591}
-  pageNumber: 0
+  pagesIndex: 0
 --- !u!61 &1328205007685566457
 BoxCollider2D:
   m_ObjectHideFlags: 0

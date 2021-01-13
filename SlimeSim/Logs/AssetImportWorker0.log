@@ -1,663 +1,1335 @@
 Using pre-set license
-Built from '2020.2/release' branch; Version is '2020.2.0f1 (3721df5a8b28) revision 3613151'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 15961 MB
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 32699 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.2.0f1\Editor\Unity.exe
+D:\unitys\2020.2.1f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/vitor/OneDrive/Documents/GitHub/Hobby/SlimeSim
+D:/GitHub/Hobby/SlimeSim
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54852
-Successfully changed project path to: C:/Users/vitor/OneDrive/Documents/GitHub/Hobby/SlimeSim
-C:/Users/vitor/OneDrive/Documents/GitHub/Hobby/SlimeSim
+59132
+Successfully changed project path to: D:/GitHub/Hobby/SlimeSim
+D:/GitHub/Hobby/SlimeSim
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 118.05 ms, found 1 plugins.
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Refreshing native plugins compatible for Editor in 54.69 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.2.0f1 (3721df5a8b28)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/vitor/OneDrive/Documents/GitHub/Hobby/SlimeSim/Assets
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path D:/unitys/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/GitHub/Hobby/SlimeSim/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) Iris(R) Plus Graphics (ID=0x8a52)
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1e89)
     Vendor:   
-    VRAM:     7980 MB
-    Driver:   27.20.100.8783
+    VRAM:     5967 MB
+    Driver:   27.21.14.6109
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56444
+Mono path[0] = 'D:/unitys/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'D:/unitys/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/unitys/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56864
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002094 seconds.
+Register platform support module: D:/unitys/2020.2.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: D:/unitys/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/unitys/2020.2.1f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.001068 seconds.
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 90.42 ms, found 1 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 60.68 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.389 seconds
+- Completed reload, in  1.303 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003246 seconds.
+Registered in 0.000983 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 91.39 ms, found 1 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 65.55 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.693 seconds
+- Completed reload, in  0.996 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2839 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.3 MB.
+System memory in use after: 147.5 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3309.
+Total: 3.617800 ms (FindLiveObjects: 0.515800 ms CreateObjectMapping: 0.266000 ms MarkObjects: 2.803700 ms  DeleteObjects: 0.030500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Player/Player.prefab
+  artifactKey: Guid(03df935feb408c8459dd465ae4b35e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player/Player.prefab using Guid(03df935feb408c8459dd465ae4b35e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc60f355431499e4d125bed79952e7e9') in 0.265919 seconds
+  Import took 0.272341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Player/PlayerController.cs
+  artifactKey: Guid(c0ef6b0f86dc00c41876e33b55bf4245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player/PlayerController.cs using Guid(c0ef6b0f86dc00c41876e33b55bf4245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df6e4357f559f59b6c86dc79c7ef662') in 0.036495 seconds
+  Import took 0.040609 seconds .
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001362 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2838 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 147.0 MB.
-System memory in use after: 147.3 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3308.
-Total: 2.797500 ms (FindLiveObjects: 0.245500 ms CreateObjectMapping: 0.167300 ms MarkObjects: 2.339400 ms  DeleteObjects: 0.043100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002624 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.345 seconds
+- Completed reload, in  1.373 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.4 MB.
-System memory in use after: 140.6 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3310.
-Total: 3.054600 ms (FindLiveObjects: 0.351300 ms CreateObjectMapping: 0.270200 ms MarkObjects: 2.396900 ms  DeleteObjects: 0.032200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003038 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.136 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2729 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.5 MB.
-System memory in use after: 140.7 MB.
+System memory in use before: 145.8 MB.
+System memory in use after: 146.0 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3312.
-Total: 2.140700 ms (FindLiveObjects: 0.217800 ms CreateObjectMapping: 0.116200 ms MarkObjects: 1.786600 ms  DeleteObjects: 0.018200 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Objects/FakeWall
-  artifactKey: Guid(f6df03cbfae90de468b2e502219766e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall using Guid(f6df03cbfae90de468b2e502219766e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '545f3b7584508b982f0069f2fd6b088b') in 0.006730 seconds
-  Import took 0.011573 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.371712 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb07dde289edb425ba8d6cffbfcffce') in 0.318996 seconds
-  Import took 0.330225 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.709056 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e90d006c2307eab247f6c8915d6d28ca') in 0.022957 seconds
-  Import took 0.030199 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.975645 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cfd08b83889f2c1d72d35b85d0bf362') in 0.030736 seconds
-  Import took 0.039200 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.440871 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90be9c0f69f8efc8820c20a60713aa76') in 0.043594 seconds
-  Import took 0.049403 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.299902 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f320d9e1b2df9839cafc73bb6cca4301') in 0.039925 seconds
-  Import took 0.049373 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.848425 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a701516af7f5e5b4d5aa8677e4e682') in 0.025791 seconds
-  Import took 0.034776 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.254038 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6e26b8a7b1f3b76437a2ba769240c1') in 0.027952 seconds
-  Import took 0.035790 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.038427 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc30e160128c0510c7c833884040a73d') in 0.036329 seconds
-  Import took 0.045264 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.783944 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7abff635aadcc54a829e838790e7ad4') in 0.029684 seconds
-  Import took 0.034838 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.389527 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ed7e3b99d1387a6eb6b5508e16b3ba') in 0.037787 seconds
-  Import took 0.045945 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.204569 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c88d7cfcfe63375a6f1f6812dd786ec8') in 0.023646 seconds
-  Import took 0.030865 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.246611 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f16317d00234bca75ae0aa69d9833b29') in 0.024720 seconds
-  Import took 0.030762 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.972075 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '819c6ef0d2efaa1daf73f9f489382f58') in 0.026052 seconds
-  Import took 0.031584 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.344452 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8525fd2ba27f22b9d122eadf4a9cb47d') in 0.020669 seconds
-  Import took 0.026546 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.805811 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2a8c040fbed9192cf3de20a02a930f') in 0.025884 seconds
-  Import took 0.032191 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.683345 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36d3af520e2c51cee1a877c74eac89ab') in 0.021899 seconds
-  Import took 0.027721 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.948959 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b4b75ec6f67851ace31dc74e65a0eb') in 0.026986 seconds
-  Import took 0.033001 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.632330 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d6c1809ad84a66ec1721a1a98698d87') in 0.021076 seconds
-  Import took 0.028600 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.011266 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0369f4a63414b7d02e35d8da6cbfb0b0') in 0.027483 seconds
-  Import took 0.033336 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.342714 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '823e3347dee70cc2d5c7d693116baea7') in 0.026931 seconds
-  Import took 0.032728 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.804339 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18f5802af2ddf9b3452739a26ccbff33') in 0.035419 seconds
-  Import took 0.044864 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.992041 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e8900021d046fbec0d17181ab67ffc4') in 0.029630 seconds
-  Import took 0.035733 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.262830 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9066ac4ecb1600931a13e5459bf08d') in 0.031028 seconds
-  Import took 0.039026 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.215641 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58eb2ba8cc6d088040a507826168afcc') in 0.037152 seconds
-  Import took 0.047819 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.858601 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65f8c614782ee5e30afc0b6e88c597a7') in 0.024353 seconds
-  Import took 0.029849 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.880441 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15e6a0dcff2f9fc1452146538ceb718f') in 0.027886 seconds
-  Import took 0.037726 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.236114 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cebe4d8f87fb778361184f8ea4b5b6a') in 0.024400 seconds
-  Import took 0.030261 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.145954 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a72f7bb08b97867e6902da6d558c464') in 0.034272 seconds
-  Import took 0.043503 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.847831 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '054bd6888191ffa2303be918dff81ac8') in 0.024707 seconds
-  Import took 0.030770 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.466918 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e8bbe2eb1ecd7d8ec6f4ca6369d1301') in 0.025499 seconds
-  Import took 0.031140 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.839618 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c7a6c4c54a718383bd0495b06bb1d5') in 0.031595 seconds
-  Import took 0.038603 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.195819 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03154afa4d11497ab547a0742e7b4700') in 0.027302 seconds
-  Import took 0.033169 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.673324 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '329a3d6377ffb39c08cfd1f3fdf266f4') in 0.032950 seconds
-  Import took 0.040273 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 74.312559 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392b97209af2ffe19af0499af2d1c9a6') in 0.026797 seconds
-  Import took 0.033392 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.750869 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb82cbba9916858089fdb04656abf901') in 0.035830 seconds
-  Import took 0.042607 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.785746 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc9284a2a2698919e43358e8c12bd396') in 0.033165 seconds
-  Import took 0.038905 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.418735 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5d8a630bb10d28da27d67e247f59146') in 0.039392 seconds
-  Import took 0.046605 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.382618 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdf3e2328c03d238ec45de79f6c363dc') in 0.026848 seconds
-  Import took 0.033516 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.677057 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e3ebcaff692f2c4a492e0abfc1d2dcf') in 0.038434 seconds
-  Import took 0.045893 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.968840 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d27711d1cd74dcc5edf4c98bb795e06') in 0.028785 seconds
-  Import took 0.036941 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.786654 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13855e0077e0841b941e363dd4715899') in 0.035278 seconds
-  Import took 0.045045 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.570168 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20124f40f5484d416b0b68717f94e116') in 0.032282 seconds
-  Import took 0.038916 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.219354 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb4b1b6c3391103abe2d1c3937ffade4') in 0.025994 seconds
-  Import took 0.033878 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.180916 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc78be32d220df7912d4ae2251164e3') in 0.032358 seconds
-  Import took 0.041160 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 151.283135 seconds.
-  path: Assets/Objects/FakeWall/Eye.controller
-  artifactKey: Guid(ccd4b038e6c468949ae2a22cf6feb1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/Eye.controller using Guid(ccd4b038e6c468949ae2a22cf6feb1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b7b2afd77e8030f185320d14a54899') in 0.013552 seconds
-  Import took 0.022424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.060499 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (Eye) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
-
-The Animator Controller (Eye) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
-
- -> (artifact id: '1e8244f62ff1286330f7ab25aa27e64a') in 0.047155 seconds
-  Import took 0.055637 seconds .
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3355.
+Total: 8.382900 ms (FindLiveObjects: 0.733400 ms CreateObjectMapping: 0.482600 ms MarkObjects: 7.107500 ms  DeleteObjects: 0.055900 ms)
 
 ========================================================================
 Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
 Registering precompiled user dll's ...
-Registered in 0.001843 seconds.
+Registered in 0.001291 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.260 seconds
+- Completed reload, in  1.355 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2729 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 146.5 MB.
-System memory in use after: 146.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3358.
-Total: 2.711900 ms (FindLiveObjects: 0.342700 ms CreateObjectMapping: 0.109600 ms MarkObjects: 2.240900 ms  DeleteObjects: 0.017600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 85.310872 seconds.
-  path: Assets/Objects/FakeWall/FakeWall.prefab
-  artifactKey: Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWall.prefab using Guid(f0ddf9b446f4211488eac70f6b51e4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (Eye) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
-
-The Animator Controller (Eye) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
-
- -> (artifact id: 'ac7959fb6647015f0bb44abadc91b4d1') in 0.218717 seconds
-  Import took 0.227785 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001943 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.596 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 146.9 MB.
-System memory in use after: 147.1 MB.
+System memory in use before: 146.3 MB.
+System memory in use after: 146.5 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3397.
-Total: 2.262000 ms (FindLiveObjects: 0.279900 ms CreateObjectMapping: 0.094900 ms MarkObjects: 1.865500 ms  DeleteObjects: 0.019900 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3357.
+Total: 2.687400 ms (FindLiveObjects: 0.277400 ms CreateObjectMapping: 0.148500 ms MarkObjects: 2.243600 ms  DeleteObjects: 0.016700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 645.444639 seconds.
+  path: Assets/Scenes/1.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25afb5d3aedd3da3a3fcfe8dd4437525') in 0.016581 seconds
+  Import took 0.022159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.429917 seconds.
+  path: Assets/Scenes/2.unity
+  artifactKey: Guid(ca744be72c4a07a4590118170ef4f703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/2.unity using Guid(ca744be72c4a07a4590118170ef4f703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7849bbf980b67b881638faed3a64a142') in 0.007242 seconds
+  Import took 0.012807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.868302 seconds.
+  path: Assets/Scenes/3.unity
+  artifactKey: Guid(3e152911599008343a83f66633da7db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3.unity using Guid(3e152911599008343a83f66633da7db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0e01177cc07436028374e2cef7f0fbf') in 0.006234 seconds
+  Import took 0.010901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.904566 seconds.
+  path: Assets/Scenes/4.unity
+  artifactKey: Guid(d2b4292b7b5e25f409d2a39793ce460e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4.unity using Guid(d2b4292b7b5e25f409d2a39793ce460e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84d823a32084c1f400fc2ac97a255383') in 0.008115 seconds
+  Import took 0.014550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.921266 seconds.
+  path: Assets/Scenes/5.unity
+  artifactKey: Guid(5c63de1a58b67c9489471349735e2755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/5.unity using Guid(5c63de1a58b67c9489471349735e2755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9e1ca005ef93f7dcd93ac33d98daab') in 0.007826 seconds
+  Import took 0.013849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.499693 seconds.
+  path: Assets/Scenes/6.unity
+  artifactKey: Guid(d1dbc0d7ba85a504a9a4073c847b003a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/6.unity using Guid(d1dbc0d7ba85a504a9a4073c847b003a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec9d378ea75876cc0f14fbf6c834f7ff') in 0.007689 seconds
+  Import took 0.013504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.693113 seconds.
+  path: Assets/Scenes/7.unity
+  artifactKey: Guid(9508e9d62f645054f891d9db7eace5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/7.unity using Guid(9508e9d62f645054f891d9db7eace5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b70f16b214989e467e3a236fab5ef6c3') in 0.006413 seconds
+  Import took 0.010759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.911512 seconds.
+  path: Assets/Scenes/8.unity
+  artifactKey: Guid(b42e7f330ef9d4d47bc8d9d708140bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/8.unity using Guid(b42e7f330ef9d4d47bc8d9d708140bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f978675b1d85cea84e9908e99aa91c72') in 0.005792 seconds
+  Import took 0.009998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.355524 seconds.
+  path: Assets/Scenes/9.unity
+  artifactKey: Guid(a25f4c2281ba09c4094e2fad005bebf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/9.unity using Guid(a25f4c2281ba09c4094e2fad005bebf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55c4c0b243682c85a0ef76119051ec94') in 0.008189 seconds
+  Import took 0.014162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.188343 seconds.
+  path: Assets/Scenes/10.unity
+  artifactKey: Guid(ce64c55a9b17cf145acbf9aec313fbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/10.unity using Guid(ce64c55a9b17cf145acbf9aec313fbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dd1e8e67356d295b33a1fe403d4b630') in 0.005559 seconds
+  Import took 0.010245 seconds .
 
 ========================================================================
 Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
 Registering precompiled user dll's ...
-Registered in 0.001862 seconds.
+Registered in 0.001618 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.383 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.7 MB.
+System memory in use after: 146.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3359.
+Total: 3.267900 ms (FindLiveObjects: 0.441600 ms CreateObjectMapping: 0.206500 ms MarkObjects: 2.598100 ms  DeleteObjects: 0.020400 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001766 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.446 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.0 MB.
+System memory in use after: 147.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3361.
+Total: 3.353700 ms (FindLiveObjects: 0.344400 ms CreateObjectMapping: 0.200800 ms MarkObjects: 2.785700 ms  DeleteObjects: 0.021800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 158.651745 seconds.
+  path: Assets/Scenes/11.unity
+  artifactKey: Guid(2f8d4116ae21f18439bb41d5143f8691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/11.unity using Guid(2f8d4116ae21f18439bb41d5143f8691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a22cb988ee41454b0951bf090bee8909') in 0.014517 seconds
+  Import took 0.019129 seconds .
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001471 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.391 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.4 MB.
+System memory in use after: 146.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3363.
+Total: 3.363500 ms (FindLiveObjects: 0.359100 ms CreateObjectMapping: 0.220900 ms MarkObjects: 2.759500 ms  DeleteObjects: 0.022300 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001701 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.487 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.8 MB.
+System memory in use after: 147.0 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3365.
+Total: 3.399000 ms (FindLiveObjects: 0.330800 ms CreateObjectMapping: 0.193500 ms MarkObjects: 2.850800 ms  DeleteObjects: 0.022600 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001926 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.406 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.1 MB.
+System memory in use after: 147.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3367.
+Total: 4.246700 ms (FindLiveObjects: 0.343100 ms CreateObjectMapping: 0.211900 ms MarkObjects: 3.663900 ms  DeleteObjects: 0.026100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1048.567364 seconds.
+  path: Assets/DontDestroyOnLoadObjects.prefab
+  artifactKey: Guid(076e19a6dea71184cb9a24917c4195a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DontDestroyOnLoadObjects.prefab using Guid(076e19a6dea71184cb9a24917c4195a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cec9ae0eeb99ab7f9e1a602c73b467a4') in 0.448281 seconds
+  Import took 0.459420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.286552 seconds.
+  path: Assets/DontDestroyOnLoadObjects.prefab
+  artifactKey: Guid(076e19a6dea71184cb9a24917c4195a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DontDestroyOnLoadObjects.prefab using Guid(076e19a6dea71184cb9a24917c4195a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cec9ae0eeb99ab7f9e1a602c73b467a4') in 0.143601 seconds
+  Import took 0.156549 seconds .
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001855 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.672 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.4 MB.
+System memory in use after: 147.6 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3407.
+Total: 3.851500 ms (FindLiveObjects: 0.388600 ms CreateObjectMapping: 0.235500 ms MarkObjects: 3.186700 ms  DeleteObjects: 0.039000 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.003020 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.886 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.7 MB.
+System memory in use after: 147.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3409.
+Total: 7.041600 ms (FindLiveObjects: 0.997300 ms CreateObjectMapping: 0.401400 ms MarkObjects: 5.592000 ms  DeleteObjects: 0.048400 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001778 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.601 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.0 MB.
+System memory in use after: 148.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3411.
+Total: 3.592500 ms (FindLiveObjects: 0.418800 ms CreateObjectMapping: 0.206300 ms MarkObjects: 2.944200 ms  DeleteObjects: 0.021500 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001676 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.694 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.4 MB.
+System memory in use after: 147.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3413.
+Total: 3.580900 ms (FindLiveObjects: 0.371300 ms CreateObjectMapping: 0.189100 ms MarkObjects: 2.997000 ms  DeleteObjects: 0.022200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 342.606547 seconds.
+  path: Assets/Scenes/12.unity
+  artifactKey: Guid(817bbe97cc72ba94aa4fb52802a1acd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/12.unity using Guid(817bbe97cc72ba94aa4fb52802a1acd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2b761794096e6f38785e4518db68c7b') in 0.019916 seconds
+  Import took 0.025922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.796266 seconds.
+  path: Assets/Player/Player.prefab
+  artifactKey: Guid(03df935feb408c8459dd465ae4b35e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player/Player.prefab using Guid(03df935feb408c8459dd465ae4b35e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '871f4a39856e764e2b1d8f63f2eeb927') in 0.217542 seconds
+  Import took 0.224691 seconds .
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001623 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.398 seconds
+- Completed reload, in  1.658 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 147.0 MB.
-System memory in use after: 147.2 MB.
+System memory in use before: 147.8 MB.
+System memory in use after: 148.1 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3399.
-Total: 3.431200 ms (FindLiveObjects: 0.479100 ms CreateObjectMapping: 0.197500 ms MarkObjects: 2.725000 ms  DeleteObjects: 0.027900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 78.848690 seconds.
-  path: Assets/Objects/FakeWall/FakeWallBehavior.cs
-  artifactKey: Guid(87b538edf8e0b6743a73287e0f6d647c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/FakeWall/FakeWallBehavior.cs using Guid(87b538edf8e0b6743a73287e0f6d647c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5938cc31380737bcdf3100a31f462207') in 0.015644 seconds
-  Import took 0.022196 seconds .
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3451.
+Total: 3.531500 ms (FindLiveObjects: 0.516300 ms CreateObjectMapping: 0.219000 ms MarkObjects: 2.773700 ms  DeleteObjects: 0.021100 ms)
 
 ========================================================================
 Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
 Registering precompiled user dll's ...
-Registered in 0.003548 seconds.
+Registered in 0.001542 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.317 seconds
+- Completed reload, in  1.445 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 146.6 MB.
-System memory in use after: 146.8 MB.
+System memory in use before: 148.1 MB.
+System memory in use after: 148.3 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3401.
-Total: 3.448600 ms (FindLiveObjects: 0.421100 ms CreateObjectMapping: 0.193900 ms MarkObjects: 2.785400 ms  DeleteObjects: 0.046600 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3453.
+Total: 3.338200 ms (FindLiveObjects: 0.358000 ms CreateObjectMapping: 0.212000 ms MarkObjects: 2.743800 ms  DeleteObjects: 0.023100 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.002284 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.708 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.5 MB.
+System memory in use after: 147.8 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3455.
+Total: 4.103000 ms (FindLiveObjects: 0.590200 ms CreateObjectMapping: 0.419700 ms MarkObjects: 3.064500 ms  DeleteObjects: 0.027000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 518.494952 seconds.
+  path: Assets/Player
+  artifactKey: Guid(a5e6094b9066c294aa235fa8be04f264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player using Guid(a5e6094b9066c294aa235fa8be04f264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9935eb858c78359d9befe41ec600968') in 0.005352 seconds
+  Import took 0.009863 seconds .
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001740 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.545 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.9 MB.
+System memory in use after: 148.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3457.
+Total: 3.613600 ms (FindLiveObjects: 0.400900 ms CreateObjectMapping: 0.241500 ms MarkObjects: 2.945200 ms  DeleteObjects: 0.024100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.016497 seconds.
+  path: Assets/Player/SlightlyBouncy.physicMaterial
+  artifactKey: Guid(615a8117d5995f64fb25773e440b8763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player/SlightlyBouncy.physicMaterial using Guid(615a8117d5995f64fb25773e440b8763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de68edd6e44bdecbfaf3f7a6e509e011') in 0.031015 seconds
+  Import took 0.038401 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.015470 seconds.
+  path: Assets/Player/New Material.mat
+  artifactKey: Guid(c7ef46c2ea92ce140b049af5e55c6230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player/New Material.mat using Guid(c7ef46c2ea92ce140b049af5e55c6230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '388b2c49f9dee9d09821a7977b877c3f') in 0.208903 seconds
+  Import took 0.215101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.224792 seconds.
+  path: Assets/Player/SlightlyBouncy.physicsMaterial2D
+  artifactKey: Guid(8ee1b7f3f66532644bff71ebd9ca4508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player/SlightlyBouncy.physicsMaterial2D using Guid(8ee1b7f3f66532644bff71ebd9ca4508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177d63224562bcb5e6fd8438679bf508') in 0.008720 seconds
+  Import took 0.019292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.605976 seconds.
+  path: Assets/Player/Player.prefab
+  artifactKey: Guid(03df935feb408c8459dd465ae4b35e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player/Player.prefab using Guid(03df935feb408c8459dd465ae4b35e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f72bf1c0876e86bd3116d9f0b22aa2a') in 0.078708 seconds
+  Import took 0.089025 seconds .
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001881 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.733 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.5 MB.
+System memory in use after: 148.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3528.
+Total: 4.302400 ms (FindLiveObjects: 0.434500 ms CreateObjectMapping: 0.251900 ms MarkObjects: 3.586500 ms  DeleteObjects: 0.027900 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.002037 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.921 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.9 MB.
+System memory in use after: 148.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 4.592600 ms (FindLiveObjects: 0.471200 ms CreateObjectMapping: 0.269100 ms MarkObjects: 3.820600 ms  DeleteObjects: 0.029900 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.002744 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.474 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.3 MB.
+System memory in use after: 148.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3532.
+Total: 4.019000 ms (FindLiveObjects: 0.761000 ms CreateObjectMapping: 0.363500 ms MarkObjects: 2.869100 ms  DeleteObjects: 0.023500 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001957 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.568 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.5 MB.
+System memory in use after: 148.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3534.
+Total: 3.380600 ms (FindLiveObjects: 0.362100 ms CreateObjectMapping: 0.200100 ms MarkObjects: 2.794400 ms  DeleteObjects: 0.022700 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.002169 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.583 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.0 MB.
+System memory in use after: 148.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3536.
+Total: 3.868800 ms (FindLiveObjects: 0.522200 ms CreateObjectMapping: 0.210900 ms MarkObjects: 3.108300 ms  DeleteObjects: 0.024400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 522.172417 seconds.
+  path: Assets/Scenes/13.unity
+  artifactKey: Guid(f577f1e797556554086eb32bdb014cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/13.unity using Guid(f577f1e797556554086eb32bdb014cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af83a9623d3e5b64654a5f6827a57953') in 0.017197 seconds
+  Import took 0.022324 seconds .
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001878 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.677 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.3 MB.
+System memory in use after: 148.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3538.
+Total: 3.692700 ms (FindLiveObjects: 0.405700 ms CreateObjectMapping: 0.203700 ms MarkObjects: 3.058900 ms  DeleteObjects: 0.022800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.262668 seconds.
+  path: Assets/Scenes/14.unity
+  artifactKey: Guid(70e3b41c63f439341889930a0f3e5a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/14.unity using Guid(70e3b41c63f439341889930a0f3e5a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad4fe2a9bca7e6ed214684a030887e05') in 0.018369 seconds
+  Import took 0.023335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.136244 seconds.
+  path: Assets/Scenes/15.unity
+  artifactKey: Guid(4d363cd586fa7cb40908397ccbe107b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/15.unity using Guid(4d363cd586fa7cb40908397ccbe107b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6000b56ff83e96b1f35c16a0b18aab8f') in 0.010174 seconds
+  Import took 0.017515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.087160 seconds.
+  path: Assets/DontDestroyOnLoadObjects.prefab
+  artifactKey: Guid(076e19a6dea71184cb9a24917c4195a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DontDestroyOnLoadObjects.prefab using Guid(076e19a6dea71184cb9a24917c4195a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dd9321d797c9c43340e51031d7b7d07') in 0.312238 seconds
+  Import took 0.320960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 193.401678 seconds.
+  path: Assets/Scenes/16.unity
+  artifactKey: Guid(e86bb7095cd6812458a9f86ff7ba9514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/16.unity using Guid(e86bb7095cd6812458a9f86ff7ba9514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6f7c93788c5d8844b6298b4ef17415d') in 0.008233 seconds
+  Import took 0.013783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000823 seconds.
+  path: Assets/Scenes/16.unity
+  artifactKey: Guid(e86bb7095cd6812458a9f86ff7ba9514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/16.unity using Guid(e86bb7095cd6812458a9f86ff7ba9514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6f7c93788c5d8844b6298b4ef17415d') in 0.002367 seconds
+  Import took 0.007258 seconds .
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001976 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.766 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.7 MB.
+System memory in use after: 148.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3576.
+Total: 4.041800 ms (FindLiveObjects: 0.451300 ms CreateObjectMapping: 0.236700 ms MarkObjects: 3.309600 ms  DeleteObjects: 0.043000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.969559 seconds.
+  path: Assets/Scenes/17.unity
+  artifactKey: Guid(cb847c5f88b9929488437b915e27a098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/17.unity using Guid(cb847c5f88b9929488437b915e27a098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7efc55191b9dec25bed843671a4acd88') in 0.018437 seconds
+  Import took 0.024251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.486458 seconds.
+  path: Assets/Scenes/18.unity
+  artifactKey: Guid(5d9e197cbcfee724ba138bb7a0da2c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/18.unity using Guid(5d9e197cbcfee724ba138bb7a0da2c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d79fabb9b3a109ebb1d1a032fd94855') in 0.005972 seconds
+  Import took 0.010551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.977280 seconds.
+  path: Assets/Scenes/15.unity
+  artifactKey: Guid(4d363cd586fa7cb40908397ccbe107b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/15.unity using Guid(4d363cd586fa7cb40908397ccbe107b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feca319554a8002501c925f4d9ba25e3') in 0.002938 seconds
+  Import took 0.008805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000547 seconds.
+  path: Assets/Scenes/15.unity
+  artifactKey: Guid(4d363cd586fa7cb40908397ccbe107b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/15.unity using Guid(4d363cd586fa7cb40908397ccbe107b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feca319554a8002501c925f4d9ba25e3') in 0.003019 seconds
+  Import took 0.008657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.694697 seconds.
+  path: Assets/Scenes/19.unity
+  artifactKey: Guid(92450b696835ea348b4b38d975d1bcd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/19.unity using Guid(92450b696835ea348b4b38d975d1bcd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ca2f7e6c276c2fafc32a94090e96a9') in 0.008337 seconds
+  Import took 0.014625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 102.740414 seconds.
+  path: Assets/Scenes/15.unity
+  artifactKey: Guid(4d363cd586fa7cb40908397ccbe107b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/15.unity using Guid(4d363cd586fa7cb40908397ccbe107b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac1ba8aa0bd6e7573987ba0120dd7435') in 0.002966 seconds
+  Import took 0.008174 seconds .
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001941 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.792 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.2 MB.
+System memory in use after: 148.4 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3578.
+Total: 3.190600 ms (FindLiveObjects: 0.346600 ms CreateObjectMapping: 0.176200 ms MarkObjects: 2.644900 ms  DeleteObjects: 0.021300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.639225 seconds.
+  path: Assets/Scenes/20.unity
+  artifactKey: Guid(1eee650e76f6d1348be5c389cfb36fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/20.unity using Guid(1eee650e76f6d1348be5c389cfb36fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f88be4757139e8477f51745f107047c') in 0.016797 seconds
+  Import took 0.021603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.714589 seconds.
+  path: Assets/Scenes/21.unity
+  artifactKey: Guid(34521b224393dbb4da7ce32be29c837b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/21.unity using Guid(34521b224393dbb4da7ce32be29c837b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac6fa7dfa2b4586c57f1af1f1e9b0b02') in 0.007806 seconds
+  Import took 0.013630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000626 seconds.
+  path: Assets/Scenes/21.unity
+  artifactKey: Guid(34521b224393dbb4da7ce32be29c837b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/21.unity using Guid(34521b224393dbb4da7ce32be29c837b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac6fa7dfa2b4586c57f1af1f1e9b0b02') in 0.003001 seconds
+  Import took 0.008858 seconds .
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.001879 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.620 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.5 MB.
+System memory in use after: 148.8 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3580.
+Total: 5.284600 ms (FindLiveObjects: 0.807500 ms CreateObjectMapping: 0.362200 ms MarkObjects: 4.080100 ms  DeleteObjects: 0.031400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 155.321648 seconds.
+  path: Assets/Scenes/24.unity
+  artifactKey: Guid(fa245704d2f1a3847a806d7138fc71be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/24.unity using Guid(fa245704d2f1a3847a806d7138fc71be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a5696a4902f447e1dab58fba7ef4671') in 0.018317 seconds
+  Import took 0.024763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.048477 seconds.
+  path: Assets/Scenes/25.unity
+  artifactKey: Guid(8884f9c317ae1a34a95dac33eebd1b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/25.unity using Guid(8884f9c317ae1a34a95dac33eebd1b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '201f2eed10d10b90c09ea103de38aa74') in 0.008569 seconds
+  Import took 0.015188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.038250 seconds.
+  path: Assets/Scenes/26.unity
+  artifactKey: Guid(4dff2137f2288f44c96f9d58f73f498d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/26.unity using Guid(4dff2137f2288f44c96f9d58f73f498d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5660c17075a6edb66abdb6c69bd877e2') in 0.007033 seconds
+  Import took 0.012602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.341085 seconds.
+  path: Assets/Scenes/27.unity
+  artifactKey: Guid(ee0ba7e304e1e684686b4246781f6313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/27.unity using Guid(ee0ba7e304e1e684686b4246781f6313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ccb2dd9beb8d89ac22b405c706f559') in 0.009295 seconds
+  Import took 0.016033 seconds .
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.002150 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.309 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.7 MB.
+System memory in use after: 149.0 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3582.
+Total: 4.319000 ms (FindLiveObjects: 0.479800 ms CreateObjectMapping: 0.263300 ms MarkObjects: 3.544400 ms  DeleteObjects: 0.029600 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.002267 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.228 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.3 MB.
+System memory in use after: 148.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3584.
+Total: 5.629300 ms (FindLiveObjects: 0.750000 ms CreateObjectMapping: 0.360500 ms MarkObjects: 4.479300 ms  DeleteObjects: 0.036700 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.002629 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.256 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.6 MB.
+System memory in use after: 148.8 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3586.
+Total: 5.111000 ms (FindLiveObjects: 0.512700 ms CreateObjectMapping: 0.266200 ms MarkObjects: 4.296900 ms  DeleteObjects: 0.032700 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.003916 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.874 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.8 MB.
+System memory in use after: 149.0 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3588.
+Total: 4.888200 ms (FindLiveObjects: 0.531400 ms CreateObjectMapping: 0.281600 ms MarkObjects: 4.032300 ms  DeleteObjects: 0.040800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2379.911550 seconds.
+  path: Assets/Scenes/28.unity
+  artifactKey: Guid(4581a81a09fd23e4bb5006d5e6e7e29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/28.unity using Guid(4581a81a09fd23e4bb5006d5e6e7e29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d4e88b6d942b4c8ca72c9c0bf2fb035') in 0.026582 seconds
+  Import took 0.034799 seconds .
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.003982 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 5.71 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.549 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.3 MB.
+System memory in use after: 148.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3590.
+Total: 4.781700 ms (FindLiveObjects: 0.483000 ms CreateObjectMapping: 0.285500 ms MarkObjects: 3.975400 ms  DeleteObjects: 0.034900 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.002281 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.570 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.7 MB.
+System memory in use after: 148.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3592.
+Total: 7.296900 ms (FindLiveObjects: 0.792400 ms CreateObjectMapping: 0.411300 ms MarkObjects: 6.049500 ms  DeleteObjects: 0.039900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 3116.322864 seconds.
+  path: Assets/Scenes/27.unity
+  artifactKey: Guid(ee0ba7e304e1e684686b4246781f6313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/27.unity using Guid(ee0ba7e304e1e684686b4246781f6313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c3ae7d7b25723b7433a52fcdbf88daa') in 0.017835 seconds
+  Import took 0.025109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.183559 seconds.
+  path: Assets/Scenes/26.unity
+  artifactKey: Guid(4dff2137f2288f44c96f9d58f73f498d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/26.unity using Guid(4dff2137f2288f44c96f9d58f73f498d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2cadab8521510a907d91edf7e77587a') in 0.003290 seconds
+  Import took 0.009687 seconds .
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.003253 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.909 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.8 MB.
+System memory in use after: 149.0 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3594.
+Total: 4.125300 ms (FindLiveObjects: 0.397000 ms CreateObjectMapping: 0.213900 ms MarkObjects: 3.486700 ms  DeleteObjects: 0.026200 ms)
+
+========================================================================
+Received Prepare
+Please move 'C:\Users\vitor\OneDrive\Documents\GitHub\Hobby\SlimeSim\Assets\WSATestCertificate.pfx' certificate inside a project, certificate path changed to Assets/WSATestCertificate.pfx
+
+Registering precompiled user dll's ...
+Registered in 0.002616 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.780 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.4 MB.
+System memory in use after: 148.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3596.
+Total: 4.473000 ms (FindLiveObjects: 0.416700 ms CreateObjectMapping: 0.238100 ms MarkObjects: 3.790000 ms  DeleteObjects: 0.026700 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

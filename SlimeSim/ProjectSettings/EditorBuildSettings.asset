@@ -80,4 +80,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/24.unity
     guid: fa245704d2f1a3847a806d7138fc71be
+  - enabled: 1
+    path: Assets/Scenes/25.unity
+    guid: 8884f9c317ae1a34a95dac33eebd1b95
+  - enabled: 1
+    path: Assets/Scenes/26.unity
+    guid: 4dff2137f2288f44c96f9d58f73f498d
+  - enabled: 1
+    path: Assets/Scenes/27.unity
+    guid: ee0ba7e304e1e684686b4246781f6313
   m_configObjects: {}

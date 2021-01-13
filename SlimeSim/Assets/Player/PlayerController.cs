@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
         Iddle,
         Running,
         Jump,
-        Jumping,
+        InAir,
         TurnToStand,
         Landing,
         Sit,
@@ -23,18 +23,19 @@ public class PlayerController : MonoBehaviour
     public agentStates agentState { get; private set; }
 
     //movement
+    private CircleCollider2D circleColl2D; //this is the only circle collider attached
     private Rigidbody2D rb2d;
     public float speed, maxVel, jumpForce;
-    public float getUpRotationIncrement, getUpJumpForce;
-    //timer of x seconds to ensure character needs to stand up after timeout
-    public float getUpWaitTime;
-    private float getUpTimer;
-
+    public float standTorque;
+    public float acceptableStandRotation;
     public Vector2 moveVector { get; private set; }
+    private Collider2D feetTrigger; //this is the only box collider attached
     private bool onGround;
 
     //mage/priest particle effects
     public GameObject mageParticles, priestParticles;
+    //mage/priest masks
+    public GameObject mageMask, priestMask;
 
     //android controls
     public GameObject analog;
@@ -56,16 +57,18 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        circleColl2D = GetComponent<CircleCollider2D>();
         rb2d = GetComponent<Rigidbody2D>();
-        moveVector = new Vector2();
+        moveVector = new Vector2(0,0);
+        feetTrigger = GetComponent<BoxCollider2D>();
         onGround = false;
-
-        getUpTimer = getUpWaitTime;
 
         analogControls = analog.GetComponent<AnalogTouchControls>();
 
         mageParticles.SetActive(false);
         priestParticles.SetActive(false);
+        mageMask.SetActive(false);
+        priestMask.SetActive(false);
 
         InvokeRepeating("CheckOutOfStage", 1, 1);
     }
@@ -94,8 +97,6 @@ public class PlayerController : MonoBehaviour
         rb2d.SetRotation(0);
         //reset looking direction
         transform.localScale = Vector3.one;
-        //reset getting up timer
-        getUpTimer = getUpWaitTime;
         //gamedata logic when death occurs
         GameData.Die();
     }
@@ -115,28 +116,12 @@ public class PlayerController : MonoBehaviour
         {
             agentState = agentStates.Jump;
         }
-        if (!onGround) agentState = agentStates.Jumping;
     }
 
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.tag == "Ground") moveVector = Vector2.zero;
-    }
-
-    private IEnumerator RotateToStand()
-    {
-        if (getUpTimer <= 0)
-        {
-            rb2d.velocity += new Vector2(0, getUpJumpForce);
-            rb2d.AddTorque(getUpRotationIncrement);
-        }
-        else
-        {
-            getUpTimer -= Time.deltaTime;
-        }
-
-        yield return new WaitForSeconds(0.5f);
     }
 
     // Update is called once per frame
@@ -146,9 +131,12 @@ public class PlayerController : MonoBehaviour
         {
             case agentStates.Iddle:
                 {
+                    if (rb2d.constraints != RigidbodyConstraints2D.FreezeRotation) rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+                    if (transform.rotation.z != 0) transform.rotation = new Quaternion(0, 0, 0, 0);
+
                     if (MovementIntent()) agentState = agentStates.Running;
                     CheckJump();
-                    if (Input.GetButton("Fire1")) agentState = agentStates.Sit;
                     break;
                 }
             case agentStates.Running:
@@ -161,31 +149,61 @@ public class PlayerController : MonoBehaviour
 
                     if (moveVector.x != 0)
                     {
-                        rb2d.AddForce(moveVector);
+                        //on mage unlock
+                        if (Magic.magicTypeChosen == Magic.MagicType.Mage)
+                            rb2d.velocity = new Vector2(Mathf.Clamp(moveVector.x, -maxVel - Magic.mageSpells[1].GetPower(), maxVel + Magic.mageSpells[1].GetPower()), rb2d.velocity.y);
+                        //on priest unlock
+                        else if (Magic.magicTypeChosen == Magic.MagicType.Priest)
+                            rb2d.velocity = new Vector2(Mathf.Clamp(moveVector.x, -maxVel - Magic.priestSpells[1].GetPower(), maxVel + Magic.priestSpells[1].GetPower()), rb2d.velocity.y);
+                        //standard
+                        else rb2d.velocity = new Vector2(Mathf.Clamp(moveVector.x, -maxVel, maxVel), rb2d.velocity.y);
                     }
                     break;
                 }
             case agentStates.Jump:
                 {
+                    if (rb2d.constraints == RigidbodyConstraints2D.FreezeRotation) rb2d.constraints = RigidbodyConstraints2D.None;
+
                     //on mage unlock
                     if (Magic.magicTypeChosen == Magic.MagicType.Mage) rb2d.AddForce(new Vector2(0, jumpForce + Magic.mageSpells[0].GetPower()));
                     //on priest unlock
                     else if (Magic.magicTypeChosen == Magic.MagicType.Priest) rb2d.AddForce(new Vector2(0, jumpForce + Magic.priestSpells[0].GetPower()));
                     //standard
                     else rb2d.AddForce(new Vector2(0, jumpForce));
-                    agentState = agentStates.Jumping;
+                    agentState = agentStates.InAir;
                     break;
                 }
-            case agentStates.Jumping:
+            case agentStates.InAir:
                 {
+                    if (rb2d.constraints == RigidbodyConstraints2D.FreezeRotation) rb2d.constraints = RigidbodyConstraints2D.None;
+
+                    //if y velocity is between these points
+                    if (rb2d.velocity.y > -0.02f && rb2d.velocity.y < 0.02f) 
+                    {
+                        //enable feet
+                        if(!feetTrigger.enabled) feetTrigger.enabled = true;
+
+                        //if the |rotation| is lesser than the acceptable rotation
+                        if (Mathf.Sqrt(Mathf.Pow(transform.rotation.z, 2)) < acceptableStandRotation)
+                        {
+                            transform.rotation = new Quaternion(0, 0, 0, 0);
+                            agentState = agentStates.Landing;
+                        }
+                        else
+                        {
+                            if (transform.rotation.z < 0) rb2d.AddTorque(standTorque);
+                            else if (transform.rotation.z > 0) rb2d.AddTorque(-standTorque);
+                        }
+
+                    }
+                    else feetTrigger.enabled = false;
+
                     if (onGround) agentState = agentStates.Landing;
-                    if (rb2d.velocity.magnitude < 0.01f) StartCoroutine("RotateToStand");
+
                     break;
                 }
             case agentStates.Landing:
                 {
-                    StopCoroutine("RotateToStand");
-                    getUpTimer = getUpWaitTime;
                     agentState = agentStates.Iddle;
                     break;
                 }
@@ -226,14 +244,9 @@ public class PlayerController : MonoBehaviour
                 }
         }
 
-        //on mage unlock
-        if (Magic.magicTypeChosen == Magic.MagicType.Mage)
-            rb2d.velocity = new Vector2(Mathf.Clamp(rb2d.velocity.x, -maxVel - Magic.mageSpells[1].GetPower(), maxVel + Magic.mageSpells[1].GetPower()), rb2d.velocity.y);
-        //on priest unlock
-        else if (Magic.magicTypeChosen == Magic.MagicType.Priest)
-            rb2d.velocity = new Vector2(Mathf.Clamp(rb2d.velocity.x, -maxVel - Magic.priestSpells[1].GetPower(), maxVel + Magic.priestSpells[1].GetPower()), rb2d.velocity.y);
-        //standard
-        else rb2d.velocity = new Vector2(Mathf.Clamp(rb2d.velocity.x, -maxVel, maxVel), rb2d.velocity.y);
+
+        //check if falling or if the current rotation is bigger than the acceptable standing up rotation
+        if (!onGround) agentState = agentStates.InAir;
     }
 
     private bool MovementIntent()

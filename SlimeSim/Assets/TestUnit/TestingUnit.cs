@@ -9,11 +9,12 @@ public class TestingUnit : MonoBehaviour
     public Toggle unlockSideKick;
     public Toggle unlockMage;
     public Toggle unlockPriest;
+    public Toggle unlockFakeWall;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        GetComponent<Canvas>().worldCamera = Camera.main;
     }
 
     // Update is called once per frame
@@ -36,6 +37,10 @@ public class TestingUnit : MonoBehaviour
             Journal.UpdateSideKickBranch();
             for (int i = 0; i < 25; i++) GameData.AddPageToCollection(i);
             GameData.PriestJoins();
+        }
+        if (unlockFakeWall.GetComponent<Toggle>().isOn && !GameData.fakeWallJoined) 
+        {
+            GameData.FakeWallJoins();
         }
     }
 }
