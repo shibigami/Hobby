@@ -22,7 +22,7 @@ public class CameraBehaviour : MonoBehaviour
 
     public void Update()
     {
-        if (((Vector2)transform.position - (Vector2)player.transform.position).magnitude > 6) distanceModifier = 0.15f;
+        if (((Vector2)transform.position - (Vector2)player.transform.position).magnitude > 6) distanceModifier = 0.45f;
         else distanceModifier = 0;
         moveVector = Vector3.MoveTowards(transform.position, player.transform.position + offset, (speed*Time.deltaTime)+distanceModifier);
         moveVector.z = zPosition;

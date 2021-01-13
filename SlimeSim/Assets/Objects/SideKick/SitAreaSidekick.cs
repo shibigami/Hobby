@@ -6,6 +6,7 @@ public class SitAreaSidekick : MonoBehaviour
 {
     public bool playerSat { get; private set; }
     public bool coinHere { get; private set; }
+    private GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -15,30 +16,27 @@ public class SitAreaSidekick : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-
-    }
-
-    public void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
+        if (player != null)
         {
-            if (collision.GetComponent<PlayerController>().agentState == PlayerController.agentStates.Sit)
+            if (player.GetComponent<PlayerController>().agentState == PlayerController.agentStates.Sit)
             {
                 playerSat = true;
             }
             else playerSat = false;
         }
-
-        if (collision.tag == "Coin")
-        {
-            coinHere = true;
-        }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player") player = collision.gameObject;
+        if (collision.tag == "Coin") coinHere = true;
+    }
+
     public void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player") playerSat = false;
+        if (collision.tag == "Player") player = null;
         if (collision.tag == "Coin") coinHere = false;
     }
 }

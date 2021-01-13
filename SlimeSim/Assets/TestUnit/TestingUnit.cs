@@ -20,7 +20,11 @@ public class TestingUnit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dropGold.GetComponent<Toggle>().isOn) GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().UnlockDropGold();
+        if (dropGold.GetComponent<Toggle>().isOn)
+        {
+            if(GameData.gold<5000) GameData.AddGold(1000000);
+            GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().UnlockDropGold();
+        }
         if (unlockSideKick.GetComponent<Toggle>().isOn)
         {
             if(!GameData.sideKickJoined) Journal.UpdateSideKickBranch();

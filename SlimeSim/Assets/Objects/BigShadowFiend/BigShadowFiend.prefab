@@ -5063,6 +5063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aura: {fileID: 8228157082581513126}
   chatDelay: 5
+  pushForce: 100
 --- !u!1 &8228157082581513126
 GameObject:
   m_ObjectHideFlags: 0

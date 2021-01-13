@@ -23,10 +23,10 @@ public class PlayerController : MonoBehaviour
     public agentStates agentState { get; private set; }
 
     //movement
-    private CircleCollider2D circleColl2D; //this is the only circle collider attached
     private Rigidbody2D rb2d;
     public float speed, maxVel, jumpForce;
     public float standTorque;
+    private float forceTorque;
     public float acceptableStandRotation;
     public Vector2 moveVector { get; private set; }
     private Collider2D feetTrigger; //this is the only box collider attached
@@ -57,7 +57,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        circleColl2D = GetComponent<CircleCollider2D>();
         rb2d = GetComponent<Rigidbody2D>();
         moveVector = new Vector2(0,0);
         feetTrigger = GetComponent<BoxCollider2D>();
@@ -121,7 +120,11 @@ public class PlayerController : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.tag == "Ground") moveVector = Vector2.zero;
+        if (collision.transform.tag == "Ground")
+        {
+            moveVector = Vector2.zero;
+            feetTrigger.enabled = true;
+        }
     }
 
     // Update is called once per frame
@@ -197,6 +200,16 @@ public class PlayerController : MonoBehaviour
 
                     }
                     else feetTrigger.enabled = false;
+
+                    //enable a slight increase in torque using the direction values
+                    //kind of fixes getting stuck with an awkward rotation and being able to get up
+                    if (MovementIntent())
+                    {
+                        if (Application.platform == RuntimePlatform.Android)
+                            forceTorque = analogControls.AnalogPosition().normalized.x;
+                        else forceTorque = Input.GetAxis("Horizontal");
+                        rb2d.AddTorque(-forceTorque/10);
+                    }
 
                     if (onGround) agentState = agentStates.Landing;
 

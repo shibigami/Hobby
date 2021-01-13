@@ -27,6 +27,8 @@ public class Tree : MonoBehaviour
         infoButton.SetActive(false);
         if (!GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().journalUnlocked)
             GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().UnlockJournal();
+        //clear tag for radar to stop tracking
+        tag = "Untagged";
     }
 
     public void OnTriggerStay2D(Collider2D collision)

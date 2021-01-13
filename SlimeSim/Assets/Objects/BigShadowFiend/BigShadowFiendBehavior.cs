@@ -21,6 +21,8 @@ public class BigShadowFiendBehavior : MonoBehaviour
     public float chatDelay;
     private float chatDelayTick;
 
+    public float pushForce;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -85,7 +87,7 @@ public class BigShadowFiendBehavior : MonoBehaviour
 
         if (colliderRB2D != null)
         {
-            colliderRB2D.AddForce((collision.transform.position-transform.position)*300*Time.deltaTime);
+            colliderRB2D.velocity+=(Vector2)((collision.transform.position-transform.position).normalized*pushForce*Time.deltaTime);
         }
     }
 

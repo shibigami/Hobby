@@ -14,9 +14,9 @@ public class FakeWallBehavior : MonoBehaviour
     public GameObject eye;
     public GameObject wall;
 
-    private Collider2D trigger;
-    private int coinCount;
-    public float absorbRange;
+    private GameObject player;
+    public int coinCount;
+    public float absorbSpeed;
     public float dissapearRate;
 
     private Color tempColor;
@@ -27,9 +27,6 @@ public class FakeWallBehavior : MonoBehaviour
     void Start()
     {
         wallState = WallState.Hiding;
-
-        foreach (Collider2D col in GetComponents<Collider2D>())
-            if (col.isTrigger) trigger = col;
 
         coinCount = 0;
 
@@ -44,6 +41,14 @@ public class FakeWallBehavior : MonoBehaviour
         {
             case WallState.Hiding:
                 {
+                    if (player != null)
+                    {
+                        if (player.GetComponent<PlayerController>().agentState == PlayerController.agentStates.Sit)
+                        {
+                            playerSat = true;
+                        }
+                        else playerSat = false;
+                    }
                     if (playerSat) wallState = WallState.Speak;
                     break;
                 }
@@ -66,13 +71,12 @@ public class FakeWallBehavior : MonoBehaviour
                                                                                                         "Help me out and I'll leave no stone unturned.\n" +
                                                                                                         "Bahaha!");
                     }
-                    trigger.enabled = true;
                     wallState = WallState.Absorbing;
                     break;
                 }
             case WallState.Absorbing:
                 {
-                    if (coinCount > 10) wallState = WallState.Dissapearing;
+                    if (coinCount >= 10) wallState = WallState.Dissapearing;
                     break;
                 }
             case WallState.Dissapearing:
@@ -120,30 +124,33 @@ public class FakeWallBehavior : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
-        {
-            if (collision.GetComponent<PlayerController>().agentState == PlayerController.agentStates.Sit)
-            {
-                playerSat = true;
-            }
-            else playerSat = false;
-        }
-        else if (collision.tag == "Coin" && wallState == WallState.Absorbing && coinCount < 10)
-        {
-            //if coin isnt picked and the distance to the gameobject is less than absorb range
-            if (!collision.GetComponent<Coin>().picked &&
-                (collision.gameObject.transform.position - transform.position).magnitude < absorbRange)
-            {
-                collision.GetComponent<Coin>().PickUp();
-                coinCount++;
-            }
-        }
+        if (collision.tag == "Player") player = collision.gameObject;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        playerSat = false;
+        if (collision.tag == "Player") player = null;
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Coin"&& wallState == WallState.Absorbing)
+        {
+            //go towards wall
+            collision.transform.position += (transform.position - collision.transform.position).normalized * absorbSpeed * Time.deltaTime;
+
+            //if wall is absorbing and it has absorbed less than 10 coins
+            if (coinCount < 10)
+            {
+                //if coin isnt picked and the distance to the gameobject is less than absorb range
+                if (!collision.GetComponent<Coin>().picked)
+                {
+                    collision.GetComponent<Coin>().PickUp();
+                    coinCount++;
+                }
+            }
+        }
     }
 }

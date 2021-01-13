@@ -15,6 +15,7 @@ TagManager:
   - BigChest
   - UIActiveSpells
   - Mount
+  - JournalPage
   layers:
   - Default
   - TransparentFX

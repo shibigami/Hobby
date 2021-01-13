@@ -67,7 +67,8 @@ public class SideKickController : MonoBehaviour
                 {
                     if (sitArea.playerSat)
                     {
-                        GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("Give me Shiny and I will let you pass.");
+                        if(!GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().IsChatShowing())
+                            GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("Give me Shiny and I will let you pass.");
                         if (!GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().dropGoldUnlocked) GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().UnlockDropGold();
                     }
 
