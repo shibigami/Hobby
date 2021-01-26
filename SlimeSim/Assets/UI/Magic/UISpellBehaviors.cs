@@ -84,28 +84,23 @@ public class UISpellBehaviors : MonoBehaviour
 
     public void UpdateMagicUnlockedButtons()
     {
-        if (Magic.magicTypeChosen == Magic.MagicType.None)
+        backToStartButton.SetActive(false);
+        createPlatformButton.SetActive(false);
+        darkPortalPointButton.SetActive(false);
+        darkPortalTeleportButton.SetActive(false);
+        lightProjectileButton.SetActive(false);
+
+        if (Magic.magicTypeChosen == Magic.MagicType.Mage)
         {
-            backToStartButton.SetActive(false);
-            createPlatformButton.SetActive(false);
-            darkPortalPointButton.SetActive(false);
-            darkPortalTeleportButton.SetActive(false);
-            lightProjectileButton.SetActive(false);
+            if (Magic.mageSpells[3].level > 0) backToStartButton.SetActive(true);
+            if (Magic.mageSpells[4].level > 0) createPlatformButton.SetActive(true);
+            if (Magic.mageSpells[5].level > 0) darkPortalPointButton.SetActive(true);
         }
-        else
+        else if (Magic.magicTypeChosen == Magic.MagicType.Priest)
         {
-            if (Magic.magicTypeChosen == Magic.MagicType.Mage)
-            {
-                if (Magic.mageSpells[3].level > 0) backToStartButton.SetActive(true);
-                if (Magic.mageSpells[4].level > 0) createPlatformButton.SetActive(true);
-                if (Magic.mageSpells[5].level > 0) darkPortalPointButton.SetActive(true);
-            }
-            else if (Magic.magicTypeChosen == Magic.MagicType.Priest)
-            {
-                if (Magic.priestSpells[3].level > 0) backToStartButton.SetActive(true);
-                if (Magic.priestSpells[4].level > 0) createPlatformButton.SetActive(true);
-                if (Magic.priestSpells[5].level > 0) lightProjectileButton.SetActive(true);
-            }
+            if (Magic.priestSpells[3].level > 0) backToStartButton.SetActive(true);
+            if (Magic.priestSpells[4].level > 0) createPlatformButton.SetActive(true);
+            if (Magic.priestSpells[5].level > 0) lightProjectileButton.SetActive(true);
         }
     }
 

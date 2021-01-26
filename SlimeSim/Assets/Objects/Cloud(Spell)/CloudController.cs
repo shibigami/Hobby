@@ -8,7 +8,7 @@ public class CloudController : MonoBehaviour
 
     private GameObject player;
 
-    private float lifeTimer;
+    private float deathTime;
 
     private bool die;
 
@@ -17,7 +17,7 @@ public class CloudController : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
 
-        player.GetComponent<PlayerController>().Mount(gameObject,speed);
+        player.GetComponent<PlayerController>().Mount(gameObject, speed);
 
         die = false;
     }
@@ -27,8 +27,7 @@ public class CloudController : MonoBehaviour
     {
         if (!die)
         {
-            lifeTimer -= Time.deltaTime;
-            if (lifeTimer <= 0) StartCoroutine("Die");
+            if (Time.time > deathTime) StartCoroutine("Die");
         }
     }
 
@@ -43,8 +42,8 @@ public class CloudController : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void SetLifeTimer(int timeInSeconds) 
+    public void SetLifeTimer(int timeInSeconds)
     {
-        lifeTimer = timeInSeconds;
+        deathTime = Time.time + timeInSeconds;
     }
 }

@@ -16,6 +16,8 @@ TagManager:
   - UIActiveSpells
   - Mount
   - JournalPage
+  - Inventory
+  - Seed
   layers:
   - Default
   - TransparentFX
@@ -25,8 +27,8 @@ TagManager:
   - UI
   - Player
   - Mount
-  - 
-  - 
+  - Seeds
+  - Traps
   - 
   - 
   - 

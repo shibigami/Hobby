@@ -7,7 +7,9 @@ public class Dialogue : MonoBehaviour
 {
     public GameObject balloon;
     public Text textBox;
+    public float refreshTime;
     private List<string> textQueue;
+    private int stringSubSetIndex;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +18,9 @@ public class Dialogue : MonoBehaviour
         textBox.text = "";
         textQueue = new List<string>();
 
-        InvokeRepeating("UpdateDialogue", 0, 0.3f);
+        stringSubSetIndex = -1;
+
+        InvokeRepeating("UpdateDialogue", 0, refreshTime);
     }
 
     // Update is called once per frame
@@ -24,7 +28,16 @@ public class Dialogue : MonoBehaviour
     {
         if (textQueue.Count > 0)
         {
-            textBox.text = textQueue[0];
+            //check if not reached end of current line
+            if (stringSubSetIndex < textQueue[0].Length)
+            {
+                //increase index to show next char
+                stringSubSetIndex++;
+                //set substring to text box
+                textBox.text = textQueue[0].Substring(0,stringSubSetIndex);
+            }
+
+            //show dialogue balloon if its not showing yet
             if (!balloon.activeSelf) balloon.SetActive(true);
         }
     }
@@ -36,7 +49,23 @@ public class Dialogue : MonoBehaviour
 
     public void HideDialogue()
     {
-        textQueue.RemoveAt(0);
+        //if its still writing
+        if (stringSubSetIndex < textQueue[0].Length)
+        //show everything
+        {
+            stringSubSetIndex = textQueue[0].Length - 1;
+            textBox.text = textQueue[0];
+        }
+        //if its already fully written skip to next dialogue
+        else
+        {
+            //skip to next dialogue
+            textQueue.RemoveAt(0);
+            //clear dialogue box
+            textBox.text = "";
+            //reset substring counter
+            stringSubSetIndex = 0;
+        }
         if (textQueue.Count <= 0) balloon.SetActive(false);
     }
 

@@ -31,11 +31,15 @@ public class PlayerController : MonoBehaviour
     public Vector2 moveVector { get; private set; }
     private Collider2D feetTrigger; //this is the only box collider attached
     private bool onGround;
+    public float landingDelay;
+    private float landingTimer;
 
     //mage/priest particle effects
     public GameObject mageParticles, priestParticles;
     //mage/priest masks
     public GameObject mageMask, priestMask;
+    //backpack
+    public GameObject backPack;
 
     //android controls
     public GameObject analog;
@@ -48,6 +52,10 @@ public class PlayerController : MonoBehaviour
 
     //death particles
     public GameObject deathParticles;
+
+    //plant growth particles
+    public GameObject plantGrowthParticles;
+    private Collider2D[] plantColliders;
 
     private void Awake()
     {
@@ -68,6 +76,12 @@ public class PlayerController : MonoBehaviour
         priestParticles.SetActive(false);
         mageMask.SetActive(false);
         priestMask.SetActive(false);
+
+        backPack.SetActive(false);
+
+        plantGrowthParticles.GetComponent<ParticleSystem>().Stop();
+
+        Invoke("UpdateWornObjects",1f);
 
         InvokeRepeating("CheckOutOfStage", 1, 1);
     }
@@ -134,12 +148,20 @@ public class PlayerController : MonoBehaviour
         {
             case agentStates.Iddle:
                 {
+                    //freeze rotation while walking
                     if (rb2d.constraints != RigidbodyConstraints2D.FreezeRotation) rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
-
+                    //set correct rotation for standing up
                     if (transform.rotation.z != 0) transform.rotation = new Quaternion(0, 0, 0, 0);
 
-                    if (MovementIntent()) agentState = agentStates.Running;
-                    CheckJump();
+                    //only move after landing delay
+                    if (Time.time > landingTimer)
+                    {
+                        if (MovementIntent()) agentState = agentStates.Running;
+                        CheckJump();
+                    }
+
+                    //if dropping
+                    if (!onGround) agentState = agentStates.InAir;
                     break;
                 }
             case agentStates.Running:
@@ -149,6 +171,7 @@ public class PlayerController : MonoBehaviour
                     else moveVector = new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime * speed, 0);
                     if (!MovementIntent()) agentState = agentStates.Iddle;
                     CheckJump();
+                    if (!onGround) agentState = agentStates.InAir;
 
                     if (moveVector.x != 0)
                     {
@@ -189,15 +212,10 @@ public class PlayerController : MonoBehaviour
                         //if the |rotation| is lesser than the acceptable rotation
                         if (Mathf.Sqrt(Mathf.Pow(transform.rotation.z, 2)) < acceptableStandRotation)
                         {
+                            //stand
                             transform.rotation = new Quaternion(0, 0, 0, 0);
                             agentState = agentStates.Landing;
                         }
-                        else
-                        {
-                            if (transform.rotation.z < 0) rb2d.AddTorque(standTorque);
-                            else if (transform.rotation.z > 0) rb2d.AddTorque(-standTorque);
-                        }
-
                     }
                     else feetTrigger.enabled = false;
 
@@ -206,12 +224,17 @@ public class PlayerController : MonoBehaviour
                     if (MovementIntent())
                     {
                         if (Application.platform == RuntimePlatform.Android)
-                            forceTorque = analogControls.AnalogPosition().normalized.x;
-                        else forceTorque = Input.GetAxis("Horizontal");
-                        rb2d.AddTorque(-forceTorque/10);
+                            forceTorque = analogControls.AnalogPosition().normalized.x*standTorque;
+                        else forceTorque = Input.GetAxis("Horizontal")*standTorque;
+                        rb2d.AddTorque(-forceTorque);
+                        rb2d.velocity += new Vector2(forceTorque*Time.deltaTime,0);
                     }
 
-                    if (onGround) agentState = agentStates.Landing;
+                    if (onGround)
+                    {
+                        landingTimer = Time.time + landingDelay;
+                        agentState = agentStates.Landing;
+                    }
 
                     break;
                 }
@@ -223,18 +246,43 @@ public class PlayerController : MonoBehaviour
             case agentStates.Sit:
                 {
                     //use mage third spell to show door
-                    if (Magic.magicTypeChosen == Magic.MagicType.Mage && Magic.mageSpells[2].GetCurrentCooldown() <= 0)
+                    if (Magic.magicTypeChosen == Magic.MagicType.Mage && Magic.mageSpells[2].level > 0 && Magic.mageSpells[2].GetCurrentCooldown() <= 0)
                         GameObject.FindGameObjectWithTag("Door").GetComponent<DoorHandler>().ShowDoor(Magic.mageSpells[2].UseActiveSpell());
 
                     //use priest third spell to show door
-                    else if (Magic.magicTypeChosen == Magic.MagicType.Priest && Magic.priestSpells[2].GetCurrentCooldown() <= 0)
+                    else if (Magic.magicTypeChosen == Magic.MagicType.Priest && Magic.priestSpells[2].level > 0 && Magic.priestSpells[2].GetCurrentCooldown() <= 0)
                         GameObject.FindGameObjectWithTag("Door").GetComponent<DoorHandler>().ShowDoor(Magic.priestSpells[2].UseActiveSpell());
 
-                    if (MovementIntent()) agentState = agentStates.Iddle;
+                    if (MovementIntent())
+                    {
+                        agentState = agentStates.Iddle;
+                    }
+
+                    //sing if plants nearby
+                    plantColliders = Physics2D.OverlapCircleAll(transform.position, 0.5f);
+                    bool check = false;
+                    for (int i = 0; i < plantColliders.Length; i++)
+                    {
+                        if (plantColliders[i].tag == "Seed")
+                        {
+                            if (!plantColliders[i].GetComponent<GenericSeedBehavior>().pickable)
+                            {
+                                check = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (check && plantGrowthParticles.GetComponent<ParticleSystem>().isStopped)
+                        plantGrowthParticles.GetComponent<ParticleSystem>().Play();
+
                     break;
                 }
-            case agentStates.Mounting: 
+            case agentStates.Mounting:
                 {
+                    //disable plant growth particles
+                    if (plantGrowthParticles.GetComponent<ParticleSystem>().isPlaying)
+                        plantGrowthParticles.GetComponent<ParticleSystem>().Stop();
+                    //mount
                     agentState = agentStates.Mounted;
                     break;
                 }
@@ -256,15 +304,18 @@ public class PlayerController : MonoBehaviour
                     break;
                 }
         }
-
-
-        //check if falling or if the current rotation is bigger than the acceptable standing up rotation
-        if (!onGround) agentState = agentStates.InAir;
     }
 
-    private bool MovementIntent()
+    public bool MovementIntent()
     {
-        if (Input.GetAxis("Horizontal") != 0 || analogControls.AnalogPosition().x != 0) return true;
+        if (Input.GetAxis("Horizontal") != 0 || analogControls.AnalogPosition().x != 0)
+        {
+            //stop growth particles on movement intent
+            if (plantGrowthParticles.GetComponent<ParticleSystem>().isPlaying)
+                plantGrowthParticles.GetComponent<ParticleSystem>().Stop();
+
+            return true;
+        }
         else return false;
     }
 
@@ -283,12 +334,13 @@ public class PlayerController : MonoBehaviour
 
     public void Mount(GameObject mountObject,float mount_Speed) 
     {
-        agentState = agentStates.Mounting;
         mount = mountObject;
         mountSpeed = mount_Speed;
         mountRb2d = mount.GetComponent<Rigidbody2D>();
 
         rb2d.freezeRotation = true;
+
+        agentState = agentStates.Mounting;
 
         //disable interaction by setting the tag to default
         tag = "Untagged";
@@ -297,10 +349,25 @@ public class PlayerController : MonoBehaviour
     public void Dismount() 
     {
         agentState = agentStates.Iddle;
-
+        rb2d.velocity = new Vector2(0, 0);
         rb2d.freezeRotation = false;
 
         //reenable interaction by re-setting the tag
         tag = "Player";
+    }
+
+    public void UpdateWornObjects() 
+    {
+        if (GameData.mageJoined)
+        {
+            mageMask.SetActive(true);
+            mageParticles.SetActive(true);
+        }
+        else if (GameData.priestJoined) 
+        {
+            priestMask.SetActive(true);
+            priestParticles.SetActive(true);
+        }
+        if (GameData.inventoryUnlocked) backPack.SetActive(true);
     }
 }

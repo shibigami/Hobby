@@ -328,6 +328,8 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -1272,8 +1274,8 @@ TextureImporter:
         y: 643
         width: 29
         height: 29
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2254,7 +2256,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8e900444bd7be4e4eb2fb8c5b369096b
     internalID: 0
     vertices: []
     indices: 

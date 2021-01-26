@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Outputs : MonoBehaviour
@@ -10,7 +11,6 @@ public class Outputs : MonoBehaviour
     public Text pageText;
     public GameObject journalButton;
     public GameObject journalIndicator;
-    private Image journalIndicatorImage;
     public GameObject[] journalPageButtons;
     public GameObject dropGoldButton;
     public GameObject goldCoin;
@@ -19,8 +19,11 @@ public class Outputs : MonoBehaviour
     public GameObject sideKickIcon;
     public GameObject mageButton;
     public GameObject priestButton;
+    public GameObject inventoryButton;
+    public GameObject nextLevelWindow;
 
     private GameObject player;
+    private PlayerController playerController;
 
     // Start is called before the first frame update
     void Start()
@@ -36,13 +39,11 @@ public class Outputs : MonoBehaviour
         //check if pages unlocked
         foreach (int i in GameData.collectedPages) if (i == 1) { journalUnlocked = true; break; }
 
-        //set journal indicator image to change color
-        journalIndicatorImage = journalIndicator.GetComponent<Image>();
-
         if (GameData.goldDropUnlocked) dropGoldUnlocked = true;
         else dropGoldUnlocked = false;
 
         journalButton.SetActive(false);
+        inventoryButton.SetActive(false);
         dropGoldButton.SetActive(false);
 
         if (GameData.sideKickJoined) sideKickIcon.SetActive(true);
@@ -55,6 +56,7 @@ public class Outputs : MonoBehaviour
         else priestButton.SetActive(false);
 
         player = GameObject.FindGameObjectWithTag("Player");
+        playerController = player.GetComponent<PlayerController>();
 
         InvokeRepeating("UpdateUI", 0, 0.5f);
     }
@@ -66,6 +68,14 @@ public class Outputs : MonoBehaviour
 
         if (journalUnlocked && !journalButton.activeSelf) journalButton.SetActive(true);
         if (dropGoldUnlocked && !dropGoldButton.activeSelf) dropGoldButton.SetActive(true);
+        if (GameData.inventoryUnlocked && playerController.agentState == PlayerController.agentStates.Sit)
+        {
+            if (!inventoryButton.activeSelf) inventoryButton.SetActive(true);
+        }
+        else
+        {
+            if (inventoryButton.activeSelf) inventoryButton.SetActive(false);
+        }
         if (GameData.sideKickJoined && !sideKickIcon.activeSelf) sideKickIcon.SetActive(true);
         if (GameData.mageJoined && !mageButton.activeSelf) mageButton.SetActive(true);
         if (GameData.priestJoined && !priestButton.activeSelf) priestButton.SetActive(true);
@@ -116,6 +126,54 @@ public class Outputs : MonoBehaviour
                 GameObject temp = Instantiate(goldCoin, player.transform.position, new Quaternion(0, 0, 0, 0));
                 temp.GetComponent<Coin>().SetThrowned(7.5f);
             }
+        }
+    }
+
+    public void ShowNextLevelWindow() 
+    {
+        nextLevelWindow.SetActive(true);
+    }
+
+    public void NextLevel() 
+    {
+        try
+        {
+            //reset rotation
+            GameObject.FindGameObjectWithTag("Player").transform.rotation = new Quaternion(0, 0, 0, 0);
+            //hide window
+            nextLevelWindow.SetActive(false);
+            //if its not the hub
+            if (SceneManager.GetActiveScene().name != "Hub")
+            {
+                //increment current level
+                GameData.NextLevel(int.Parse(SceneManager.GetActiveScene().name.ToString()) + 1);
+            }
+            //save
+            GameData.Save();
+            //load scene
+            SceneManager.LoadScene(GameData.currentLevel.ToString());
+        }
+        catch
+        {
+            Debug.Log("Invalid Scene");
+        }
+    }
+
+    public void GoHome() 
+    {
+        if (SceneManager.GetActiveScene().name != "Hub")
+        {
+            //increment current level
+            GameData.NextLevel(int.Parse(SceneManager.GetActiveScene().name.ToString()) + 1);
+            Debug.Log("Incremented");
+            //reset rotation
+            GameObject.FindGameObjectWithTag("Player").transform.rotation = new Quaternion(0, 0, 0, 0);
+            //hide window
+            nextLevelWindow.SetActive(false);
+            //save
+            GameData.Save();
+            //load hub
+            SceneManager.LoadScene("Hub");
         }
     }
 }

@@ -7,30 +7,33 @@ public class StartHere : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        try
+        if (GameObject.FindGameObjectWithTag("Player"))
         {
-            GameObject.FindGameObjectWithTag("Player").transform.position = transform.position;
-            GameObject.FindGameObjectWithTag("Player").transform.rotation = new Quaternion(0, 0, 0, 0);
-        }
-        catch 
-        {
-            Debug.Log("Player not present in Scene.");
-        }
-        try
-        {
-            GameObject.FindGameObjectWithTag("UIActiveSpells").GetComponent<UISpellBehaviors>().OnSceneChanged();
-        }
-        catch 
-        {
-            Debug.Log("UIActiveSpells not present in Scene");
-        }
-        try
-        {
-            GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ClearDialogue();
-        }
-        catch 
-        {
-            Debug.Log("Dialogue UI error.");
+            try
+            {
+                GameObject.FindGameObjectWithTag("Player").transform.position = transform.position;
+                GameObject.FindGameObjectWithTag("Player").transform.rotation = new Quaternion(0, 0, 0, 0);
+            }
+            catch
+            {
+                Debug.Log("Player not present in Scene.");
+            }
+            try
+            {
+                GameObject.FindGameObjectWithTag("UIActiveSpells").GetComponent<UISpellBehaviors>().OnSceneChanged();
+            }
+            catch
+            {
+                Debug.Log("UIActiveSpells not present in Scene");
+            }
+            try
+            {
+                GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ClearDialogue();
+            }
+            catch
+            {
+                Debug.Log("Dialogue UI error.");
+            }
         }
     }
 

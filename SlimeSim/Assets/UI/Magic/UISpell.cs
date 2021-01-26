@@ -23,7 +23,7 @@ public class UISpell : MonoBehaviour
                 {
                     level.text = string.Format("Lvl.{0}",Magic.mageSpells[spellID].level.ToString());
                     cost.text = Magic.mageSpells[spellID].upgradeCost.ToString();
-                    tooltipName.text = Magic.mageSpells[spellID].name.ToString();
+                    tooltipName.text = Magic.mageSpells[spellID].spellName.ToString();
                     tooltipDescritpion.text = Magic.mageSpells[spellID].description;
                     break;
                 }
@@ -31,7 +31,7 @@ public class UISpell : MonoBehaviour
                 {
                     level.text = string.Format("Lvl.{0}", Magic.priestSpells[spellID].level.ToString());
                     cost.text = Magic.priestSpells[spellID].upgradeCost.ToString();
-                    tooltipName.text = Magic.priestSpells[spellID].name.ToString();
+                    tooltipName.text = Magic.priestSpells[spellID].spellName.ToString();
                     tooltipDescritpion.text = Magic.priestSpells[spellID].description;
                     break;
                 }
@@ -62,5 +62,10 @@ public class UISpell : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void OnEnable()
+    {
+        UpdateInfo();
     }
 }

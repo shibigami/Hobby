@@ -82,4 +82,10 @@ public static class Magic
     {
         magicTypeChosen = magicType;
     }
+
+    public static void LoadSpells() 
+    {
+        mageSpells = GameData.dataStorage.mageSpells;
+        priestSpells = GameData.dataStorage.priestSpells;
+    }
 }

@@ -35,12 +35,14 @@ public class TestingUnit : MonoBehaviour
             Journal.UpdateSideKickBranch();
             for (int i = 0; i < 25; i++) GameData.AddPageToCollection(i);
             GameData.MageJoins();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().mageMask.SetActive(true);
         }
         if (unlockPriest.GetComponent<Toggle>().isOn && !GameData.priestJoined)
         {
             Journal.UpdateSideKickBranch();
             for (int i = 0; i < 25; i++) GameData.AddPageToCollection(i);
             GameData.PriestJoins();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().priestMask.SetActive(true);
         }
         if (unlockFakeWall.GetComponent<Toggle>().isOn && !GameData.fakeWallJoined) 
         {

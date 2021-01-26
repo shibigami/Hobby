@@ -66,6 +66,9 @@ public class Mage : MonoBehaviour
                     GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("KeKeKe. Power. Give me Power!!");
                     GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("KeKeKe. Throw it on the floor and let me take it!");
                     GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("KeKeKeKwakekeke.");
+
+                    if (!GameData.goldDropUnlocked)
+                        GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().UnlockDropGold();
                     agentState = AgentStates.WaitForResponse;
                     break;
                 }

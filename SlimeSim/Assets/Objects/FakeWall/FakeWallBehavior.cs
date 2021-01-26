@@ -15,7 +15,7 @@ public class FakeWallBehavior : MonoBehaviour
     public GameObject wall;
 
     private GameObject player;
-    public int coinCount;
+    private int coinCount;
     public float absorbSpeed;
     public float dissapearRate;
 
@@ -87,8 +87,8 @@ public class FakeWallBehavior : MonoBehaviour
                         GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("Thank you! And now... I shall curse you instead!!");
                         GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("Bwahaha!!");
                         GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("...");
-                        GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("Just joking.\n" +
-                                                                                                            "Felt a bit of a draft there. All good though!");
+                        GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("My jokes crack me up.\n" +
+                                                                                                            "Almost felt a bit of a draft there. All good though!");
                         GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("I'll help you out.\n" +
                                                                                                             "If you ever see a strange Wall acting suspicous,\n" +
                                                                                                             "throw a few of those near it. About 10 should be enough.");

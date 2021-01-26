@@ -63,16 +63,7 @@ public class DoorHandler : MonoBehaviour
 
     public void NextLevel()
     {
-        GameData.NextLevel();
-        try
-        {
-            GameObject.FindGameObjectWithTag("Player").transform.rotation = new Quaternion(0, 0, 0, 0);
-            SceneManager.LoadScene(GameData.currentLevel.ToString());
-        }
-        catch
-        {
-            Debug.Log("Invalid Scene");
-        }
+        GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().ShowNextLevelWindow();
     }
 
     public void OnTriggerStay2D(Collider2D collision)
@@ -86,7 +77,11 @@ public class DoorHandler : MonoBehaviour
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player") enterSign.SetActive(false);
+        if (collision.tag == "Player")
+        {
+            enterSign.SetActive(false);
+            GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().nextLevelWindow.SetActive(false);
+        }
     }
 
     public void ShowDoor(float time) 

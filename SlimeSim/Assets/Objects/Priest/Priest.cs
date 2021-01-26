@@ -74,7 +74,7 @@ public class Priest : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (GameData.mageJoined) agentState = AgentStates.Death;
+        if (GameData.mageJoined && agentState != AgentStates.Dissapear) agentState = AgentStates.Death;
         else if (agentState == AgentStates.Idle) agentState = AgentStates.Speaking;
     }
 
