@@ -22,11 +22,13 @@ public class DataStorage
     //Magic info
     public Spell[] mageSpells;
     public Spell[] priestSpells;
-    //InventoryStorage
+    //Inventory storage
     public int[] itemAmounts;
-
-    //Journal? Journal pages unlocked is stored in GameData
+    //Journal? Journal pages unlocked is stored in GameData as collected pages int array
     //Journal only needs to be updated on load in GameData
+    //Hub data
+    public int wallCoins;
+    public bool wallHouseBuilt;
 
 
     public void Load()
@@ -55,6 +57,7 @@ public class DataStorage
 
     private void SetDataToSave()
     {
+        //gamedata
         currentLevel = GameData.currentLevel;
         gold = GameData.gold;
         lives = GameData.lives;
@@ -66,10 +69,15 @@ public class DataStorage
         mageJoined = GameData.mageJoined;
         priestJoined = GameData.priestJoined;
         fakeWallJoined = GameData.fakeWallJoined;
+        //magic
         mageSpells = Magic.mageSpells;
         priestSpells = Magic.priestSpells;
+        //inventory
         itemAmounts = new int[InventorySystem.itemAmount.Length];
         itemAmounts = InventorySystem.itemAmount;
+        //hub
+        wallCoins = HubData.wallCoins;
+        wallHouseBuilt = HubData.wallHouseBuilt;
     }
 
     private void SetDataToLoad(DataStorage tempStorage)
@@ -111,6 +119,9 @@ public class DataStorage
         //inventory
         itemAmounts = new int[InventorySystem.itemAmount.Length];
         itemAmounts = tempStorage.itemAmounts;
+        //hub
+        wallCoins = tempStorage.wallCoins;
+        wallHouseBuilt = tempStorage.wallHouseBuilt;
     }
 
     public bool CheckFileExists() 

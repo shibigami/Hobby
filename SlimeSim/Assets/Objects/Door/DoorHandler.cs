@@ -53,6 +53,7 @@ public class DoorHandler : MonoBehaviour
             else if (GameData.mageJoined) doorIndicator.SetActive(false);
         }
 
+        if (player == null) player = GameObject.FindGameObjectWithTag("Player");
         if (doorIndicator.activeSelf) 
         {
             doorIndicator.GetComponent<RectTransform>().SetPositionAndRotation(

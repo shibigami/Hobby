@@ -44,10 +44,10 @@ public static class GameData
 
             InventorySystem.init();
 
+            HubData.init();
         }
         else
         {
-
             ReLoadData();
         }
     }
@@ -65,6 +65,9 @@ public static class GameData
         Magic.init();
 
         InventorySystem.init();
+
+        HubData.init();
+
         //load data into data storage instance
         dataStorage.Load();
 
@@ -90,6 +93,9 @@ public static class GameData
 
         //inventory
         InventorySystem.OverwriteItemAmounts(dataStorage.itemAmounts);
+
+        //hub
+        HubData.LoadHubData();
     }
 
     private static void LoadFromDataStorage()

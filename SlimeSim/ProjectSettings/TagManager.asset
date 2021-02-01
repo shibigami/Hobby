@@ -18,6 +18,7 @@ TagManager:
   - JournalPage
   - Inventory
   - Seed
+  - House
   layers:
   - Default
   - TransparentFX
