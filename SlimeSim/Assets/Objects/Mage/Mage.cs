@@ -40,7 +40,7 @@ public class Mage : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (!GameData.mageJoined)
         {
@@ -68,7 +68,7 @@ public class Mage : MonoBehaviour
                     GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("KeKeKeKwakekeke.");
 
                     if (!GameData.goldDropUnlocked)
-                        GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().UnlockDropGold();
+                        GameData.UnlockGoldDrop();
                     agentState = AgentStates.WaitForResponse;
                     break;
                 }

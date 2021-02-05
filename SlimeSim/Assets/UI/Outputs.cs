@@ -15,12 +15,12 @@ public class Outputs : MonoBehaviour
     public GameObject dropGoldButton;
     public GameObject goldCoin;
     public bool journalUnlocked { get; private set; }
-    public bool dropGoldUnlocked { get; private set; }
     public GameObject sideKickIcon;
     public GameObject mageButton;
     public GameObject priestButton;
     public GameObject inventoryButton;
     public GameObject nextLevelWindow;
+    public GameObject goHomeButton;
 
     private GameObject player;
     private PlayerController playerController;
@@ -38,9 +38,6 @@ public class Outputs : MonoBehaviour
 
         //check if pages unlocked
         foreach (int i in GameData.collectedPages) if (i == 1) { journalUnlocked = true; break; }
-
-        if (GameData.goldDropUnlocked) dropGoldUnlocked = true;
-        else dropGoldUnlocked = false;
 
         journalButton.SetActive(false);
         inventoryButton.SetActive(false);
@@ -61,21 +58,18 @@ public class Outputs : MonoBehaviour
         InvokeRepeating("UpdateUI", 0, 0.5f);
     }
 
-    private void UpdateUI()
+    private void Update()
     {
         goldText.text = GameData.gold.ToString();
+    }
+
+    private void UpdateUI()
+    {
         livesText.text = GameData.lives.ToString();
 
         if (journalUnlocked && !journalButton.activeSelf) journalButton.SetActive(true);
-        if (dropGoldUnlocked && !dropGoldButton.activeSelf) dropGoldButton.SetActive(true);
-        if (GameData.inventoryUnlocked && playerController.agentState == PlayerController.agentStates.Sit)
-        {
-            if (!inventoryButton.activeSelf) inventoryButton.SetActive(true);
-        }
-        else
-        {
-            if (inventoryButton.activeSelf) inventoryButton.SetActive(false);
-        }
+        if (GameData.goldDropUnlocked && !dropGoldButton.activeSelf) dropGoldButton.SetActive(true);
+        if (GameData.inventoryUnlocked && !inventoryButton.activeSelf) inventoryButton.SetActive(true);
         if (GameData.sideKickJoined && !sideKickIcon.activeSelf) sideKickIcon.SetActive(true);
         if (GameData.mageJoined && !mageButton.activeSelf) mageButton.SetActive(true);
         if (GameData.priestJoined && !priestButton.activeSelf) priestButton.SetActive(true);
@@ -84,11 +78,10 @@ public class Outputs : MonoBehaviour
         {
             if (!journalIndicator.activeSelf) journalIndicator.SetActive(true);
         }
-        else if(journalIndicator.activeSelf) journalIndicator.SetActive(false);
-    }
+        else if (journalIndicator.activeSelf) journalIndicator.SetActive(false);
 
-    private void Update()
-    {
+        if (SceneManager.GetActiveScene().name == "Hub" && goHomeButton.activeSelf) goHomeButton.SetActive(false);
+        else if (SceneManager.GetActiveScene().name != "Hub" && !goHomeButton.activeSelf) goHomeButton.SetActive(true);
     }
 
     public void SetPageToShow(int index)
@@ -110,12 +103,6 @@ public class Outputs : MonoBehaviour
         journalUnlocked = true;
     }
 
-    public void UnlockDropGold()
-    {
-        GameData.UnlockGoldDrop();
-        dropGoldUnlocked = true;
-    }
-
     public void DropGold(int amount)
     {
         if (GameData.gold >= amount)
@@ -132,6 +119,7 @@ public class Outputs : MonoBehaviour
     public void ShowNextLevelWindow() 
     {
         nextLevelWindow.SetActive(true);
+        SetTimeFlowing(false);
     }
 
     public void NextLevel() 
@@ -161,6 +149,7 @@ public class Outputs : MonoBehaviour
 
     public void GoHome() 
     {
+        nextLevelWindow.SetActive(false);
         if (SceneManager.GetActiveScene().name != "Hub")
         {
             //increment current level
@@ -175,5 +164,11 @@ public class Outputs : MonoBehaviour
             //load hub
             SceneManager.LoadScene("Hub");
         }
+    }
+
+    public void SetTimeFlowing(bool set) 
+    {
+        if (set) Time.timeScale = 1;
+        else Time.timeScale = 0;
     }
 }

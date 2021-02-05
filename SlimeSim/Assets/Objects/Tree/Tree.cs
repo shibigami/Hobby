@@ -15,11 +15,6 @@ public class Tree : MonoBehaviour
         obtained = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void getInfo() 
     {
         GameData.AddPageToCollection(pagesIndex);

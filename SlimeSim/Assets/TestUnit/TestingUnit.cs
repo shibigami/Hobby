@@ -23,7 +23,7 @@ public class TestingUnit : MonoBehaviour
         if (dropGold.GetComponent<Toggle>().isOn)
         {
             if(GameData.gold<5000) GameData.AddGold(1000000);
-            GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().UnlockDropGold();
+            GameData.UnlockGoldDrop();
         }
         if (unlockSideKick.GetComponent<Toggle>().isOn)
         {

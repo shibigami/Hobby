@@ -26,7 +26,6 @@ public class FakeWallBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //if (!GameData.fakeWallJoined && SceneManager.GetActiveScene().name == "Hub") gameObject.SetActive(false);
         wallState = WallState.Hiding;
 
         coinCount = 0;
@@ -36,15 +35,16 @@ public class FakeWallBehavior : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (!GameData.fakeWallJoined)
+        if (SceneManager.GetActiveScene().name != "Hub")
         {
             switch (wallState)
             {
                 case WallState.Hiding:
                     {
                         if(PlayerSat()) wallState = WallState.Speak;
+                        Debug.Log("Is player sat?"+PlayerSat());
                         break;
                     }
                 case WallState.Speak:
@@ -118,7 +118,7 @@ public class FakeWallBehavior : MonoBehaviour
                     }
             }
         }
-        else if (SceneManager.GetActiveScene().name == "Hub") 
+        else
         {
             switch (wallState)
             {
@@ -157,6 +157,7 @@ public class FakeWallBehavior : MonoBehaviour
                         if (coinCount != HubData.GetHouseBricksBuilt()) 
                         {
                             GameObject.FindGameObjectWithTag("House").GetComponent<HouseBehavior>().UpdateBuild();
+                            GameData.Save();
                             coinCount = HubData.GetHouseBricksBuilt();
                         }
                         if (HubData.wallHouseBuilt) wallState = WallState.Idle;

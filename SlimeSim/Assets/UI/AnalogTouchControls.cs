@@ -23,7 +23,7 @@ public class AnalogTouchControls : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Input.touchCount > 0)
         {

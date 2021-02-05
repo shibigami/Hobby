@@ -1017,7 +1017,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -160}
+  m_AnchoredPosition: {x: 0, y: -50}
   m_SizeDelta: {x: 1040, y: 660}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &8715630239869848309
@@ -1050,7 +1050,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_FontSize: 44
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1197,6 +1197,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1288588784001052292}
+        m_TargetAssemblyTypeName: Outputs, Assembly-CSharp
+        m_MethodName: SetTimeFlowing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &1335752099139652513
 GameObject:
@@ -2460,6 +2472,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1288588784001052292}
+        m_TargetAssemblyTypeName: Outputs, Assembly-CSharp
+        m_MethodName: SetTimeFlowing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &2180281949565070405
 GameObject:
   m_ObjectHideFlags: 0
@@ -3296,6 +3320,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1288588784001052292}
+        m_TargetAssemblyTypeName: Outputs, Assembly-CSharp
+        m_MethodName: SetTimeFlowing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3092068657013789148
 GameObject:
   m_ObjectHideFlags: 0
@@ -3673,6 +3709,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1288588784001052292}
+        m_TargetAssemblyTypeName: Outputs, Assembly-CSharp
+        m_MethodName: SetTimeFlowing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3344595200473606428
 GameObject:
@@ -4774,6 +4822,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1288588784001052292}
+        m_TargetAssemblyTypeName: Outputs, Assembly-CSharp
+        m_MethodName: SetTimeFlowing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &4445813843150706023
 GameObject:
   m_ObjectHideFlags: 0
@@ -4902,7 +4962,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5731396717161615682, guid: 9fb826f3ca5c937439ca036782864fa1, type: 3}
+  m_Sprite: {fileID: 2072855680864953843, guid: 2676ff5c94fc9f1489d59bf570d079e3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5307,6 +5367,7 @@ MonoBehaviour:
   priestButton: {fileID: 3222818785271813400}
   inventoryButton: {fileID: 7605260986792490108}
   nextLevelWindow: {fileID: 613871363440968636}
+  goHomeButton: {fileID: 6027383343603731316}
 --- !u!1 &4845811382963848390
 GameObject:
   m_ObjectHideFlags: 0
@@ -6972,6 +7033,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1288588784001052292}
+        m_TargetAssemblyTypeName: Outputs, Assembly-CSharp
+        m_MethodName: SetTimeFlowing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &5975318779425788088
 GameObject:
   m_ObjectHideFlags: 0
@@ -7115,6 +7188,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1288588784001052292}
+        m_TargetAssemblyTypeName: Outputs, Assembly-CSharp
+        m_MethodName: SetTimeFlowing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &6004417477921710846
 GameObject:
@@ -7340,6 +7425,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1288588784001052292}
+        m_TargetAssemblyTypeName: Outputs, Assembly-CSharp
+        m_MethodName: SetTimeFlowing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2950175791967805037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7466,7 +7563,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -425}
+  m_AnchoredPosition: {x: 0, y: -355}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8819237550869794520
@@ -7800,6 +7897,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1288588784001052292}
+        m_TargetAssemblyTypeName: Outputs, Assembly-CSharp
+        m_MethodName: SetTimeFlowing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &6239959630450924085
 GameObject:
   m_ObjectHideFlags: 0
@@ -7838,7 +7947,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -150}
-  m_SizeDelta: {x: 1200, y: 800}
+  m_SizeDelta: {x: 1250, y: 800}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &7749046177580221575
 CanvasRenderer:
@@ -9148,6 +9257,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1288588784001052292}
+        m_TargetAssemblyTypeName: Outputs, Assembly-CSharp
+        m_MethodName: SetTimeFlowing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &8881965299459218516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9303,6 +9424,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1288588784001052292}
+        m_TargetAssemblyTypeName: Outputs, Assembly-CSharp
+        m_MethodName: SetTimeFlowing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &7459669092621778102
 GameObject:
@@ -9529,7 +9662,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 3123709431063512271}
         m_TargetAssemblyTypeName: UIInventorySystem, Assembly-CSharp
-        m_MethodName: UpdateItemAmounts
+        m_MethodName: ClearItemSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9550,6 +9683,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1288588784001052292}
+        m_TargetAssemblyTypeName: Outputs, Assembly-CSharp
+        m_MethodName: SetTimeFlowing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7623042711349558344
 GameObject:
@@ -11035,6 +11180,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1288588784001052292}
+        m_TargetAssemblyTypeName: Outputs, Assembly-CSharp
+        m_MethodName: SetTimeFlowing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &9106309926064489937
 GameObject:
@@ -12675,6 +12832,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3538644113153624953, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3595163945537459095, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -13007,6 +13168,38 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5546133787065367916, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546133787065367916, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546133787065367916, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1288588784001052292}
+    - target: {fileID: 5546133787065367916, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546133787065367916, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetTimeFlowing
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546133787065367916, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Outputs, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546133787065367916, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546133787065367916, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5624698005700468887, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -13078,6 +13271,38 @@ PrefabInstance:
     - target: {fileID: 5640898481551826251, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6013101868816632887, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6013101868816632887, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6013101868816632887, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1288588784001052292}
+    - target: {fileID: 6013101868816632887, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6013101868816632887, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetTimeFlowing
+      objectReference: {fileID: 0}
+    - target: {fileID: 6013101868816632887, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Outputs, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6013101868816632887, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6013101868816632887, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6044898562052282002, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
       propertyPath: m_AnchorMax.y
@@ -13437,6 +13662,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7714786983275961038, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837738864465220228, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}
+      propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7936431937457829901, guid: 0e62670a99e19694397ef2e9c4be16d2, type: 3}

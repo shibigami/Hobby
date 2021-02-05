@@ -48,7 +48,7 @@ public class SideKickController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         switch (agentState) 
         {
@@ -69,7 +69,7 @@ public class SideKickController : MonoBehaviour
                     {
                         if(!GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().IsChatShowing())
                             GameObject.FindGameObjectWithTag("Dialogue").GetComponent<Dialogue>().ShowDialogue("Give me Shiny and I will let you pass.");
-                        if (!GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().dropGoldUnlocked) GameObject.FindGameObjectWithTag("UI").GetComponent<Outputs>().UnlockDropGold();
+                        if (!GameData.goldDropUnlocked) GameData.UnlockGoldDrop();
                     }
 
                     if (sitArea.coinHere)

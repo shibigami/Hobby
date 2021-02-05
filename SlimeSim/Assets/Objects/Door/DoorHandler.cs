@@ -35,13 +35,15 @@ public class DoorHandler : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (enterSign.activeSelf)
+        {
             if (Input.GetAxis("Vertical") > 0.2f)
             {
                 NextLevel();
             }
+        }
 
         if (showTimer>0) 
         {

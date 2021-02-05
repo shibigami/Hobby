@@ -11,6 +11,7 @@ public class PlayerAnimationHandler : MonoBehaviour
     private PlayerController controller;
     public float idleTime;
     private float idleTimer;
+    private float mountDelay;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class PlayerAnimationHandler : MonoBehaviour
         animator = GetComponent<Animator>();
         controller = playerController.GetComponent<PlayerController>();
         idleTimer = idleTime;
+        mountDelay = 0;
     }
 
     // Update is called once per frame
@@ -35,7 +37,9 @@ public class PlayerAnimationHandler : MonoBehaviour
         controller.agentState == PlayerController.agentStates.Iddle ||
         controller.agentState == PlayerController.agentStates.Running));
         animator.SetBool("Sit", (controller.agentState == PlayerController.agentStates.Sit));
-        animator.SetBool("Mounting", controller.agentState == PlayerController.agentStates.Mounting);
+        if (controller.agentState == PlayerController.agentStates.Mounting) mountDelay = Time.time + 0.5f;
+        if(Time.time<mountDelay) animator.SetBool("Mounting", true);
+        else animator.SetBool("Mounting", false);
         animator.SetBool("Mounted", controller.agentState == PlayerController.agentStates.Mounted);
 
         //set iddle animation timer
