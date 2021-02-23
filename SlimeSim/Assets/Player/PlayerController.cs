@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
 
     //mounts
     public GameObject mount { get; private set; }
+    private float mountDelay;
     private float mountSpeed;
     private Rigidbody2D mountRb2d;
 
@@ -166,13 +167,18 @@ public class PlayerController : MonoBehaviour
                 }
             case agentStates.Running:
                 {
+                    //use controls appropriate to platform
                     if (Application.platform == RuntimePlatform.Android)
                         moveVector = new Vector2(analogControls.AnalogPosition().x * Time.deltaTime * speed, 0);
                     else moveVector = new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime * speed, 0);
+                    //change to idle if no more movement intent
                     if (!MovementIntent()) agentState = agentStates.Iddle;
+                    //check for jump
                     CheckJump();
+                    //falling/jumping
                     if (!onGround) agentState = agentStates.InAir;
 
+                    //adjust velocity according to upgrades unlocked
                     if (moveVector.x != 0)
                     {
                         //on mage unlock
@@ -282,6 +288,8 @@ public class PlayerController : MonoBehaviour
                     //disable plant growth particles
                     if (plantGrowthParticles.GetComponent<ParticleSystem>().isPlaying)
                         plantGrowthParticles.GetComponent<ParticleSystem>().Stop();
+
+                    if(Time.time>mountDelay)
                     //mount
                     agentState = agentStates.Mounted;
                     break;
@@ -338,7 +346,10 @@ public class PlayerController : MonoBehaviour
         mountSpeed = mount_Speed;
         mountRb2d = mount.GetComponent<Rigidbody2D>();
 
+        rb2d.bodyType = RigidbodyType2D.Static;
         rb2d.freezeRotation = true;
+
+        mountDelay = Time.time + 0.5f;
 
         agentState = agentStates.Mounting;
 
@@ -346,8 +357,9 @@ public class PlayerController : MonoBehaviour
         tag = "Untagged";
     }
 
-    public void Dismount() 
+    public void Dismount()
     {
+        rb2d.bodyType = RigidbodyType2D.Dynamic;
         agentState = agentStates.Iddle;
         rb2d.velocity = new Vector2(0, 0);
         rb2d.freezeRotation = false;

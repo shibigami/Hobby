@@ -34,7 +34,7 @@ public class BigShadowFiendBehavior : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         switch (agentState)
         {

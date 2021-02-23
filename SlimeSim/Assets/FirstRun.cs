@@ -11,10 +11,4 @@ public class FirstRun : MonoBehaviour
     {
         if (!GameObject.FindGameObjectWithTag("Player")) Instantiate(dontDestroyOnLoadObjects);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

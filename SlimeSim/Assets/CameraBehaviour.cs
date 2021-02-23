@@ -20,7 +20,7 @@ public class CameraBehaviour : MonoBehaviour
         distanceModifier = 0;
     }
 
-    public void Update()
+    public void FixedUpdate()
     {
         if (((Vector2)transform.position - (Vector2)player.transform.position).magnitude > 6) distanceModifier = 0.45f;
         else distanceModifier = 0;

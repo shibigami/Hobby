@@ -19,7 +19,7 @@ public class Bush : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (inputDelayTimer > 0) inputDelayTimer -= Time.deltaTime;
     }

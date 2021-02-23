@@ -35,11 +35,6 @@ public class UIInventorySystem : MonoBehaviour
         ClearItemSelected();
     }
 
-    private void FixedUpdate()
-    {
-        if (player.GetComponent<Rigidbody2D>().velocity!=Vector2.zero) gameObject.SetActive(false);
-    }
-
     // Update is called once per frame
     public void UpdateItemAmounts()
     {

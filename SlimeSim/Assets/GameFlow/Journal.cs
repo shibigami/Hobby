@@ -60,7 +60,7 @@ public static class Journal
             "than had I waited just staring. The power of this melody seems to affect more than just myself. And these " +
             "capsules are sure to show me more than I could without them. Another step less towards " +
             "what I seek, through these lands that less seem dark and bleak.";
-        pages[12] = "Again, he showed up in front of me with such impressive power. This time speaking as if he " +
+        pages[12] = "Again, he showed up in front of me with such impressive power. This time, speaking as if he " +
             "knew me and as if I had been here before. I recall the slight sensation of these lands, but no more.\n";
         pages[13] = "";
         pages[14] = "";
@@ -119,8 +119,8 @@ public static class Journal
             pages[12] += "Kekeke. How could you know what you have not seen? But tell me, do these lands not " +
                 "feel like home? Kekekekakeke!\n" +
                 "Like home? I find it hard believing in what you say. But have I really been here before? And " +
-                "for how long? And the things that fall and cover all around... It is not warm or cold. Only a " +
-                "softness that dissapears moments after it is touched.";
+                "for how long? And falls and covers all around... It is not warm or cold. Only a " +
+                "softness that dissappears moments after it is touched.";
         }
         //priest branch
         else if (GameData.priestJoined)

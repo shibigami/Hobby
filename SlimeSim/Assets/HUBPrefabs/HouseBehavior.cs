@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class HouseBehavior : MonoBehaviour
 {
+    public GameObject fakeWall;
     public GameObject[] houseBricks;
     private Vector2[] initialBrickPosition;
-    public GameObject backGroundWall;
+    public GameObject backgroundWall;
 
     private int currentBuildIndex;
 
     // Start is called before the first frame update
     void Start()
     {
-        //if (!GameData.fakeWallJoined) houseBricks[0].SetActive(false);
-
         initialBrickPosition = new Vector2[houseBricks.Length];
 
         for (int i = 0; i < houseBricks.Length; i++)
@@ -24,7 +23,7 @@ public class HouseBehavior : MonoBehaviour
             //set all bricks to behind first wall
             if (i != 0) houseBricks[i].transform.localPosition = new Vector3(0, 0, 0);
         }
-        backGroundWall.transform.localScale = new Vector3(backGroundWall.transform.localScale.x,0,backGroundWall.transform.localScale.z);
+        backgroundWall.transform.localScale = new Vector3(backgroundWall.transform.localScale.x,0,backgroundWall.transform.localScale.z);
 
 
         currentBuildIndex = 0;
@@ -35,6 +34,19 @@ public class HouseBehavior : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
+        //check if fakewall joined
+        if (!GameData.fakeWallJoined)
+        {
+            fakeWall.SetActive(false);
+            houseBricks[0].SetActive(false);
+        }
+        else
+        {
+            if (!fakeWall.activeSelf) fakeWall.SetActive(true);
+            if (HubData.GetHouseBricksBuilt() > 0 && !houseBricks[0].activeSelf) houseBricks[0].SetActive(true);
+        }
+
+        //nuild
         if (currentBuildIndex < houseBricks.Length)
         {
             houseBricks[currentBuildIndex].transform.localPosition = Vector2.MoveTowards(houseBricks[currentBuildIndex].transform.localPosition,
@@ -43,7 +55,7 @@ public class HouseBehavior : MonoBehaviour
         else
         {
             if (!HubData.wallHouseBuilt) HubData.WallHouseFinalized();
-            if (backGroundWall.transform.localScale.y < 0.5f) backGroundWall.transform.localScale += new Vector3(0, 0.25f * Time.deltaTime, 0);
+            if (backgroundWall.transform.localScale.y < 0.5f) backgroundWall.transform.localScale += new Vector3(0, 0.25f * Time.deltaTime, 0);
         }
     }
 
@@ -53,7 +65,7 @@ public class HouseBehavior : MonoBehaviour
         while (currentBuildIndex < HubData.GetHouseBricksBuilt())
         {
             currentBuildIndex++;
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(2f);
         }
     }
 
